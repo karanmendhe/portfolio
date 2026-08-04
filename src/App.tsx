@@ -81,7 +81,7 @@ const IconGithub = () => (
 const KaranLogoStamp = () => (
   <div className="footer-logo-wrap" style={{ marginBottom: '20px' }}>
     <img
-      src="assets/logo/karan-logo.jpeg"
+      src="/assets/logo/karan-logo.jpeg"
       alt="Karan Mendhe Official Logo"
       className="footer-official-logo"
       referrerPolicy="no-referrer"
@@ -413,7 +413,7 @@ export default function App() {
                   <div className="avatar-glow"></div>
                   <div className="avatar-ring"></div>
                   <div className="avatar-photo">
-                    <img src="assets/karan-profile.jpg" alt="Karan Mendhe" />
+                    <img src="/assets/karan-profile.jpg" alt="Karan Mendhe" />
                   </div>
                 </div>
               </div>
@@ -550,7 +550,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="about-photo">
-                  <img src="assets/karan-about.jpg" alt="Karan Mendhe" />
+                  <img src="/assets/karan-about.jpg" alt="Karan Mendhe" />
                 </div>
               </div>
 
@@ -632,7 +632,7 @@ export default function App() {
                 <div className="moments-grid">
                   <div className="moment-card">
                     <div className="moment-img-wrap">
-                      <img src="assets/Moments Along the Way/SIH Team at National Finale.jpeg" alt="SIH Team at National Finale" loading="lazy" referrerPolicy="no-referrer" />
+                      <img src="/assets/Moments Along the Way/SIH Team at National Finale.jpeg" alt="SIH Team at National Finale" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="moment-content">
                       <span className="badge badge-comp">Smart India Hackathon 2025</span>
@@ -643,7 +643,7 @@ export default function App() {
 
                   <div className="moment-card">
                     <div className="moment-img-wrap">
-                      <img src="assets/Moments Along the Way/College Appreciation & Send-off.jpeg" alt="College Appreciation & Send-off" loading="lazy" referrerPolicy="no-referrer" />
+                      <img src="/assets/Moments Along the Way/College Appreciation & Send-off.jpeg" alt="College Appreciation & Send-off" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="moment-content">
                       <span className="badge badge-status">Institute Honor</span>
@@ -654,7 +654,7 @@ export default function App() {
 
                   <div className="moment-card">
                     <div className="moment-img-wrap">
-                      <img src="assets/Moments Along the Way/Solo Grand Finale Showcase.jpeg" alt="Solo SIH Grand Finale Showcase" loading="lazy" referrerPolicy="no-referrer" />
+                      <img src="/assets/Moments Along the Way/Solo Grand Finale Showcase.jpeg" alt="Solo SIH Grand Finale Showcase" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="moment-content">
                       <span className="badge badge-comp">SIH Showcase</span>
@@ -665,7 +665,7 @@ export default function App() {
 
                   <div className="moment-card">
                     <div className="moment-img-wrap">
-                      <img src="assets/Moments Along the Way/Wardha Startup Challenge Runner-Up.jpeg" alt="Wardha Startup Challenge Runner-Up" loading="lazy" referrerPolicy="no-referrer" />
+                      <img src="/assets/Moments Along the Way/Wardha Startup Challenge Runner-Up.jpeg" alt="Wardha Startup Challenge Runner-Up" loading="lazy" referrerPolicy="no-referrer" />
                     </div>
                     <div className="moment-content">
                       <span className="badge badge-comp">Runner-Up Award</span>
