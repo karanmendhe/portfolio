@@ -11,6 +11,7 @@ import {
   ProjectSection,
   CertificationData
 } from './data';
+import Blog from './Blog';
 
 /* --- Inline SVGs matching user's design --- */
 const IconChevron = () => (
@@ -104,6 +105,7 @@ export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [activeProject, setActiveProject] = useState<ProjectData | null>(null);
   const [activeCert, setActiveCert] = useState<CertificationData | null>(null);
+  const [showBlog, setShowBlog] = useState(false);
 
   // Accordion states
   const [allSkillsExpanded, setAllSkillsExpanded] = useState(false);
@@ -229,7 +231,13 @@ export default function App() {
       observer.disconnect();
       timelineObserver.disconnect();
     };
-  }, [activeProject, activeCert]);
+  }, [activeProject, activeCert, showBlog]);
+
+  useEffect(() => {
+    if (!showBlog) {
+      window.scrollTo(0, 0);
+    }
+  }, [showBlog]);
 
   // Counter animation logic
   const animateCounters = () => {
@@ -324,7 +332,9 @@ export default function App() {
     }
   };
 
-  return (
+  return showBlog ? (
+    <Blog onBack={() => setShowBlog(false)} />
+  ) : (
     <div id="app-root">
       {/* Navigation Bar */}
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`} id="nav">
@@ -405,6 +415,7 @@ export default function App() {
                 <div className="hero-actions reveal" style={{ transitionDelay: '.45s' }}>
                   <a href="#resume" className="btn btn-primary">Download Resume</a>
                   <a href="#projects" className="btn btn-outline">View Projects</a>
+                  <button onClick={() => setShowBlog(true)} className="btn btn-outline">View My Blog</button>
                   <a href="#contact" className="btn btn-ghost">Contact Me</a>
                 </div>
               </div>
