@@ -530,11 +530,16 @@ export default function App() {
               <div className="about-grid reveal" style={{ marginBottom: '64px' }}>
                 <div className="about-bio">
                   <p className="project-desc" style={{ marginBottom: '14px' }}>
-                    I'm Karan Kailas Mendhe, a final-year B.Tech student in Electrical Engineering at Bajaj Institute of Technology, Wardha.
-                  </p>
-                  <p className="project-desc" style={{ marginBottom: '14px' }}>
-                    I grew up in a lower-middle-class family where success wasn't measured by what we had, but by how hard we were willing to work for it. My parents taught me that consistency, honesty, and patience matter far more than shortcuts. Those values still shape every decision I make today.
-                  </p>
+  I'm Karan Kailas Mendhe, a final-year B.Tech student in Electrical Engineering at Bajaj Institute of Technology, Wardha.
+</p>
+
+<p className="project-desc" style={{ marginBottom: '14px' }}>
+  I’ve always believed that where you start doesn't define where you can go. What matters is the willingness to learn, adapt, and keep moving forward.
+</p>
+
+<p className="project-desc" style={{ marginBottom: '14px' }}>
+  I grew up in a lower-middle-class family where success wasn't measured by what we had, but by how hard we were willing to work for it. My parents taught me that consistency, honesty, and patience matter far more than shortcuts. Those values still shape every decision I make today.
+</p>
                   <p className="project-desc" style={{ marginBottom: '14px', fontWeight: 500, color: 'var(--text-main)' }}>
                     I never imagined I'd become an engineer.
                   </p>
