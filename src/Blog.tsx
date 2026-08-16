@@ -59,6 +59,8 @@ const CATEGORIES: CategoryInfo[] = [
   }
 ];
 
+const SIH_BLOG_IMG = "/assets/Blog_Images/SIH blog img/SIH_BLOG_Part_1_images";
+
 const BLOG_POSTS: BlogPost[] = [
   {
     id: "post-01",
@@ -301,7 +303,368 @@ const BLOG_POSTS: BlogPost[] = [
       ],
       footer: "The road I didn't plan turned out to be mine.\n\n— Karan Mendhe"
     }
-   }
+   },
+  {
+    id: "post-02",
+    number: "02",
+    title: "Team Dexterist — Part I: The Project We Almost Didn't Build",
+    excerpt:
+      "Two failed projects, a team built on trust instead of hierarchy, and a rehabilitation device that started as a competition entry and slowly became something more.",
+    category: "Observations & Stories",
+    date: "August 2026",
+    readingTime: "14 min read",
+    content: {
+      sections: [
+        {
+          heading: "Part I — The Project We Almost Didn't Build",
+          paragraphs: [
+            "I didn't start my Smart India Hackathon journey with a big project.",
+            "I didn't start with a perfect team.",
+            "And I definitely didn't start with a plan to reach the national stage.",
+            "It started with something much simpler.",
+            "I was in my first year of college when I first noticed students around me talking about Smart India Hackathon.",
+            "It was a national-level competition where students were building solutions to real-world problems and representing their colleges.",
+            "But what caught my attention wasn't just the competition.",
+            "It was the way those students were appreciated.",
+            "Our principal would talk about them. Teachers would appreciate their work. Other students looked up to them.",
+            "I remember thinking:"
+          ],
+          quote: "I want to experience this someday.",
+          image: {
+            path: `${SIH_BLOG_IMG}/SIH_Inspiratiojn.png`,
+            alt: "The spark that made me want to experience Smart India Hackathon"
+          }
+        },
+        {
+          heading: "My First Attempt",
+          paragraphs: [
+            "In my second year, I finally got my first opportunity.",
+            "We formed a team and started working on a railway-safety-related problem.",
+            "The idea was to develop a system that could help detect cracks or obstacles on railway tracks and potentially provide an early warning to reduce the chances of accidents."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Railway_track_idea.png`,
+            alt: "Early concept for the railway track safety detection idea"
+          }
+        },
+        {
+          heading: "My First Attempt (continued)",
+          paragraphs: [
+            "I was genuinely interested in the problem.",
+            "One of my friends was too.",
+            "For the first time, SIH didn't feel like something I was watching other students do.",
+            "It felt like something I was actually doing.",
+            "We discussed the idea, thought about how the system could work, and started moving toward the competition.",
+            "But there was one problem.",
+            "The team wasn't equally interested.",
+            "Some members weren't ready to put in the work required to take the idea forward. Slowly, the discussions became less frequent, the enthusiasm disappeared, and the project started losing momentum.",
+            "Within roughly a week, the entire plan was dropped.",
+            "Just like that.",
+            "My first SIH attempt was over before it had really begun.",
+            "It was disappointing.",
+            "But strangely, I didn't feel like giving up.",
+            "I remember thinking:"
+          ],
+          quote: "Okay. Next year."
+        },
+        {
+          heading: "Finding the Right People",
+          paragraphs: [
+            "After that attempt, I started paying more attention to the people around me.",
+            "During the later part of my second year, especially after the mini-modeling activities, I got to know some genuinely talented people in my class.",
+            "Four of us gradually became close friends.",
+            "We talked about projects, competitions, ideas, and the things we wanted to build someday.",
+            "At some point, one of those conversations became more serious.",
+            "We decided that when the right opportunity came, the four of us would build something together.",
+            "There wasn't a big meeting.",
+            "There wasn't a formal team-building process.",
+            "It was just four friends deciding:"
+          ],
+          quote: "Let's actually do something together.",
+          image: {
+            path: `${SIH_BLOG_IMG}/Boysgroup_sih.jpeg`,
+            alt: "The four of us who decided to build something together"
+          }
+        },
+        {
+          heading: "Finding the Right People (continued)",
+          paragraphs: [
+            "Then third year came.",
+            "Our college was encouraging students to work on SIH problem statements, and when the new problems were announced, we knew this was the opportunity we had been waiting for.",
+            "The four of us formed our team.",
+            "Soon after, a fifth teammate joined us, bringing strong marketing, camera, and video-editing skills to the group.",
+            "And that became the core of our team.",
+            "At that point, we still didn't have a presenter.",
+            "We figured we'd find one when the time came.",
+            "Little did we know how important that decision would become later."
+          ]
+        },
+        {
+          heading: "We Were a Team Before We Were a Competition Team",
+          paragraphs: [
+            "One thing I think made our team special was the way we worked with each other.",
+            "There was no feeling that one person had to control everyone else.",
+            "Everyone had their own opinions.",
+            "Everyone brought something different to the table.",
+            "Some of us were stronger technically. Some were better with communication. Some were better with documentation, presentation, organization, or handling people.",
+            "Most of us naturally had some leadership qualities.",
+            "When it came to choosing our team leader, we looked at what the team actually needed.",
+            "We chose the person who was good at communicating with faculty, comfortable talking with people, friendly and approachable, and capable of handling documentation and coordination.",
+            "He had the qualities we felt were important for representing the team and keeping things organized.",
+            "And once we chose him, we respected that responsibility.",
+            "But that didn't mean everyone else stopped having a voice.",
+            "If someone had an idea, we discussed it.",
+            "If someone had a different opinion, we listened.",
+            "If someone had to take responsibility for something, they did it.",
+            "Nobody needed to constantly tell someone else what to do.",
+            "We trusted each other enough to manage our own responsibilities.",
+            "Looking back, I think that became one of the strongest parts of Team Dexterist."
+          ],
+          quote:
+            "We weren't six people waiting for one person to tell us what to do. We were six people trying to make the same idea work."
+        },
+        {
+          heading: "Our First Project Wasn't Dextra",
+          paragraphs: [
+            "Our first problem statement that year was an Onion Storage System.",
+            "This time, we started seriously.",
+            "We designed the concept.",
+            "We worked on the circuit.",
+            "We simulated it.",
+            "The simulation worked."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Onionstorage_system.png`,
+            alt: "Our Onion Storage System concept, circuit, and simulation"
+          }
+        },
+        {
+          heading: "Our First Project Wasn't Dextra (continued)",
+          paragraphs: [
+            "For the first time, I could feel that this wasn't just another discussion.",
+            "We were actually building something.",
+            "We were ready to move toward hardware.",
+            "Then we discovered something we hadn't expected.",
+            "Another group, mainly mechanical students, had already been working on almost the same problem for around two to three years.",
+            "They already had hardware.",
+            "They already had experience.",
+            "They already had a huge head start.",
+            "And suddenly we had to ask ourselves: was this the right battle for us?",
+            "It wasn't that our idea was bad.",
+            "We simply realized that entering an internal competition against a team that had been working on the same problem for years would make things unnecessarily difficult.",
+            "So we dropped it.",
+            "Again.",
+            "For the second time in my SIH journey, I watched a project disappear after putting time and effort into it.",
+            "But something was different this time.",
+            "The team didn't fall apart.",
+            "Nobody said:"
+          ],
+          quote: "Let's forget SIH."
+        },
+        {
+          heading: "Then We Found Dextra",
+          paragraphs: [
+            "We simply waited for another opportunity. And it came.",
+            "SIH released another set of problem statements.",
+            "There were several problems around MedTech, healthcare, and renewable energy.",
+            "One of the healthcare problems caught our attention.",
+            "It involved rehabilitation for people who had difficulty moving their hands and fingers because of conditions affecting wrist and hand function.",
+            "We read it. Discussed it. Looked at each other.",
+            "And somehow, the decision was almost immediate:"
+          ],
+          quote: "Let's do this."
+        },
+        {
+          heading: "Then We Found Dextra (continued)",
+          paragraphs: [
+            "That was the beginning of Dextra.",
+            "At the time, we didn't know how far that decision would take us.",
+            "We only knew that the problem felt meaningful.",
+            "We started thinking about how a wearable rehabilitation device could assist hand movement while remaining simple and affordable.",
+            "We took the idea to our mentor.",
+            "Instead of simply telling us whether it was good or bad, our mentor started asking questions.",
+            "What would the patient actually need? How could we make it practical? What could we realistically build? What would make our solution different?",
+            "Those questions made the idea feel much more real.",
+            "We started believing that maybe we could actually make it.",
+            "We also started researching online, reading about the condition, existing rehabilitation methods, and the solutions already available.",
+            "But we were still looking at the problem mostly from outside.",
+            "That was about to change."
+          ]
+        },
+        {
+          heading: "The Departmental Hackathon",
+          paragraphs: [
+            "The departmental hackathon was almost there.",
+            "We had only recently found Dextra.",
+            "We had research. We had a concept. We had simulations.",
+            "But we didn't have months to prepare.",
+            "We had to explain a completely new idea almost immediately.",
+            "Our mentor helped us understand possible approaches and suggested ways we could move forward.",
+            "Our leader and hardware-focused teammate worked incredibly hard to explain the concept and model to the faculty.",
+            "We managed to show that Dextra wasn't simply something we had written on a presentation slide.",
+            "We had actually thought about how we could build it.",
+            "The judges listened. They asked questions.",
+            "And then came one sentence that gave the entire team a huge boost:"
+          ],
+          quote:
+            "If you can build this, I can guarantee you can reach the SIH finale."
+        },
+        {
+          heading: "A Direction",
+          paragraphs: [
+            "That sentence stayed with us.",
+            "For a team that had already abandoned one project that year, it felt like someone had finally told us to keep going, that this one might actually work.",
+            "But the departmental round also gave us something else.",
+            "A direction.",
+            "Our HOD and the faculty pushed us to take the project outside the classroom.",
+            "They told us, in essence, that if we really wanted to build a healthcare solution, we needed to go and talk to the people who actually deal with the problem.",
+            "And we listened."
+          ]
+        },
+        {
+          heading: "We Left the Classroom",
+          paragraphs: [
+            "This time, we went to hospitals."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Hospital_visit_for_data.png`,
+            alt: "Visiting the hospital to understand the problem firsthand"
+          }
+        },
+        {
+          heading: "We Left the Classroom (continued)",
+          paragraphs: [
+            "We spoke with technicians.",
+            "We spoke with physiotherapists.",
+            "We spoke with medical professionals who understood the problem far better than we did.",
+            "The technicians showed us the kinds of equipment already being used.",
+            "The physiotherapist explained what rehabilitation looked like from a practical perspective.",
+            "We also spoke with a neurological specialist who helped us understand the medical side of the problem — what was involved, why the problem occurred, what rehabilitation looked like, and what patients actually went through.",
+            "Some of these conversations were long. Very long.",
+            "We recorded them so we could go back, understand what we had learned, and explain it to the rest of our team.",
+            "A lot of the terminology was completely new to us.",
+            "But slowly, the problem started becoming more than just words written in an SIH document.",
+            "We started seeing the people behind it.",
+            "And then we discovered something that made the problem even more important.",
+            "Some of the equipment used in clinical environments could cost around ₹2 lakh or more.",
+            "Some personal rehabilitation devices we found were around ₹50,000 or more.",
+            "Meanwhile, our goal was to build something that could work in the range of a few thousand rupees.",
+            "Our prototype eventually came to around ₹2,200.",
+            "The difference was huge.",
+            "For us, this was one of the moments when Dextra stopped feeling like just a competition project.",
+            "There was a real affordability gap.",
+            "And suddenly, our question changed. It wasn't only whether we could win SIH. It became:"
+          ],
+          quote: "Can we actually build something that could help someone?"
+        },
+        {
+          heading: "Then Everything Changed",
+          paragraphs: [
+            "That question stayed with us.",
+            "Just when things were finally starting to move in the right direction, we faced another problem.",
+            "Our female team member had to leave the team because of personal and family circumstances."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Team_Breaking_girl_leaves.png`,
+            alt: "The team during a moment of change"
+          }
+        },
+        {
+          heading: "Then Everything Changed (continued)",
+          paragraphs: [
+            "There wasn't much time to process it.",
+            "The institutional hackathon was approaching.",
+            "We needed a presenter. And we needed one quickly.",
+            "So I asked one of my teammates, who was good at communicating with juniors and seniors, to spread the message that we were looking for someone with good presentation skills.",
+            "The search started.",
+            "And somehow, by the next morning, we had found someone.",
+            "The timing was almost ridiculous.",
+            "She had joined the team and immediately had to understand a project that the rest of us had already been working on.",
+            "She had roughly one to two days to prepare.",
+            "We sat with her. Explained Dextra. Explained the problem. Explained what we had researched. Explained what we wanted the presentation to communicate.",
+            "We gave her a script.",
+            "But what surprised me was that she didn't simply memorize it.",
+            "She understood it.",
+            "Then she started making the words her own.",
+            "And when she finally presented it, it was far better than we expected.",
+            "For someone who had joined the team practically overnight, she adapted incredibly quickly.",
+            "That was one of those moments where you realize:"
+          ],
+          quote:
+            "Sometimes teamwork isn't about having the perfect team from day one. Sometimes it's about finding the right person when everything suddenly goes wrong."
+        },
+        {
+          heading: "The Institutional Hackathon",
+          paragraphs: [
+            "And she became the sixth and final member of Team Dexterist.",
+            "Now came the institutional-level hackathon.",
+            "Our faculty had already told us that hardware would make a difference.",
+            "If we could show something physically working, it would strengthen our chances.",
+            "So we tried.",
+            "We got the motors running. We tested different parts. We worked on the mechanism.",
+            "But the complete hand-mounted prototype still wasn't ready.",
+            "We were somewhere between an idea and a real product.",
+            "Then came presentation day.",
+            "Our new presenter had done an incredible job preparing in almost no time, but she couldn't confidently complete every slide.",
+            "So I stepped in.",
+            "I took over the remaining slides and continued explaining the project.",
+            "The presentation moved forward.",
+            "Then came the questions.",
+            "Our leader handled his part. Our software teammate handled his. I handled mine.",
+            "Everyone contributed.",
+            "The judges asked questions, and our team answered them together."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Institute_round_presentation.png`,
+            alt: "Presenting together at the institutional hackathon"
+          }
+        },
+        {
+          heading: "The Institutional Hackathon (continued)",
+          paragraphs: [
+            "Our faculty members also supported us by explaining our planning and development process to the principal.",
+            "And then we walked out of the room.",
+            "For once, nobody was saying we should have done this differently.",
+            "We felt good.",
+            "We felt like we had genuinely given it everything we had.",
+            "That evening, we even had a small celebration.",
+            "Nothing huge. Just our team enjoying the moment.",
+            "Because after everything that had happened — the failed first attempt, the Onion Storage project, finding Dextra, the research, losing a team member, and finding a new one almost overnight — we finally had something to celebrate.",
+            "Then came the result.",
+            "We opened the list.",
+            "And there it was.",
+            "Team Dexterist. Selected."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG}/Final_group.jpeg`,
+            alt: "Team Dexterist after being selected"
+          }
+        },
+        {
+          heading: "The Institutional Hackathon — The Result",
+          paragraphs: [
+            "For the first time, the dream that had started back in my first year didn't feel imaginary anymore.",
+            "The competition I had watched other students participate in during my first year was now becoming real for me.",
+            "But there was an important difference:"
+          ],
+          quote: "We hadn't reached the SIH Grand Finale yet."
+        },
+        {
+          heading: "The Real Journey Was About to Begin",
+          paragraphs: [
+            "We had earned the opportunity to represent our college at the next stage.",
+            "Now we had to prepare the final presentation, document our work, improve the project, and submit everything through the official Smart India Hackathon portal.",
+            "We had roughly a month to prove that Dextra wasn't just a good idea on a presentation slide.",
+            "We had to build it. We had to make it work.",
+            "And we had to convince people beyond our college that this project deserved to move forward.",
+            "The real SIH journey was about to begin."
+          ]
+        }
+      ],
+      footer:
+        "This is Part I of the Dextra story — how Team Dexterist came together. Part II, on the road to the SIH Grand Finale, is coming soon.\n\n— Karan Mendhe"
+    }
+  }
 ];
 
 const Blog: React.FC<BlogProps> = ({ onBack }) => {
@@ -437,6 +800,19 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
           line-height: 1.75;
           max-width: 720px;
         }
+          .blog-schedule {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  padding: 8px 14px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.06);
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
 
         .category-grid {
           display: grid;
@@ -953,6 +1329,11 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
             font-size: 16px;
             line-height: 1.7;
           }
+            .blog-schedule {
+  margin-top: 14px;
+  padding: 7px 12px;
+  font-size: 12px;
+}
 
           .category-grid {
             gap: 16px;
@@ -1142,6 +1523,9 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                     A place where I document the experiences, lessons, projects,
                     experiments and thoughts that shape my journey as an engineer.
                   </p>
+                  <div className="blog-schedule">
+  New blog every Sunday
+</div>
                 </header>
 
                 <main>
@@ -1303,8 +1687,10 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
 
               <div className="article-body">
                 {selectedPost.content.sections.map((section, idx) => (
-                  <div key={idx}>
-                    <h2>{section.heading}</h2>
+  <div key={idx}>
+    {!section.heading.includes("(continued)") && (
+      <h2>{section.heading}</h2>
+    )}
 
                     {section.paragraphs.map((paragraph, paragraphIndex) => (
                       <p key={paragraphIndex}>
@@ -1312,18 +1698,18 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                       </p>
                     ))}
 
+                    {section.quote && (
+                      <div className="quote">
+                        "{section.quote}"
+                      </div>
+                    )}
+
                     {section.image && (
                       <div className="article-image">
                         <img
                           src={section.image.path}
                           alt={section.image.alt}
                         />
-                      </div>
-                    )}
-
-                    {section.quote && (
-                      <div className="quote">
-                        "{section.quote}"
                       </div>
                     )}
                   </div>
