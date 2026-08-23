@@ -60,6 +60,7 @@ const CATEGORIES: CategoryInfo[] = [
 ];
 
 const SIH_BLOG_IMG = "/assets/Blog_Images/SIH blog img/SIH_BLOG_Part_1_images";
+const SIH_BLOG_IMG_2 = "/assets/Blog_Images/SIH blog img/SIH_BLOG_Part_2_images";
 
 const BLOG_POSTS: BlogPost[] = [
   {
@@ -303,7 +304,7 @@ const BLOG_POSTS: BlogPost[] = [
       ],
       footer: "The road I didn't plan turned out to be mine.\n\n— Karan Mendhe"
     }
-   },
+  },
   {
     id: "post-02",
     number: "02",
@@ -662,7 +663,572 @@ const BLOG_POSTS: BlogPost[] = [
         }
       ],
       footer:
-        "This is Part I of the Dextra story — how Team Dexterist came together. Part II, on the road to the SIH Grand Finale, is coming soon.\n\n— Karan Mendhe"
+        "This is Part I of the Dextra story — how Team Dexterist came together. Part II, the road to the SIH Grand Finale and everywhere Dextra went after, is up next.\n\n— Karan Mendhe"
+    }
+  },
+  {
+    id: "post-03",
+    number: "03",
+    title: "Team Dexterist — Part II: From Selection to the National Stage",
+    excerpt:
+      "Fifteen days to prove Dextra deserved to go further, a phone call on a bike ride that changed everything, and a national stage that taught us more than any trophy could.",
+    category: "Observations & Stories",
+    date: "August 2026",
+    readingTime: "18 min read",
+    content: {
+      sections: [
+        {
+          heading: "The Celebration That Didn't Last",
+          paragraphs: [
+            "The institutional selection felt like a victory.",
+            "And for a little while, we treated it like one.",
+            "After the results were announced, we went to the college canteen, had some breakfast and brunch together, laughed, talked, and enjoyed the moment.",
+            "Nothing too serious.",
+            "Just six people who had been through a lot in a short amount of time, finally getting a chance to breathe.",
+            "But the celebration didn't last long.",
+            "Because now came the part that actually mattered.",
+            "Now we had to prove that Dextra deserved to go further."
+          ]
+        },
+        {
+          heading: "Fifteen Days to Prove It",
+          paragraphs: [
+            "We had roughly 15 days to prepare our official SIH submission.",
+            "And suddenly, every day mattered.",
+            "We had to improve the prototype. Refine the concept. Prepare the PPT. Document our work.",
+            "And somehow, make the judges believe that Dextra wasn't just an idea sitting inside a presentation.",
+            "Our mentor gave us another suggestion.",
+            "Make a proper video. Show the presentation. Show the prototype. Show it actually working. Put the video link into the submission.",
+            "Simple enough. Right?",
+            "Not exactly."
+          ]
+        },
+        {
+          heading: "Seven Minutes, Four Hours",
+          paragraphs: [
+            "One of our teammates had excellent camera, marketing, and editing skills, so he took charge of recording.",
+            "Our presenter handled the presentation. I handled the narration for the prototype demonstration.",
+            "And then we started recording.",
+            "The final video was supposed to be around seven minutes.",
+            "Seven minutes. It sounds easy. It wasn't. 😂",
+            "One line went wrong. Again. Someone missed a point. Again. The camera angle wasn't right. Again. The timing wasn't natural. Again.",
+            "And somehow, those seven minutes took us almost four hours to record properly.",
+            "But our teammate behind the camera didn't give up. He handled the recording and editing, including the glove demonstration.",
+            "I narrated the working portion. Our presenter carried the main presentation.",
+            "And eventually, the final video was ready.",
+            "Four hours for seven minutes. Worth it.",
+            "We submitted the PPT, the videos, and everything else required for the SIH submission.",
+            "Now we had to wait."
+          ],
+          quote: "One more take."
+        },
+        {
+          heading: "Meanwhile, Dextra Was Already Moving",
+          paragraphs: [
+            "While the SIH submission was being processed, another competition was happening.",
+            "Avishkar.",
+            "At the college level, only two technical projects were selected to move forward to the district level. Dextra was one of them.",
+            "Our presenter took the project forward, accompanied by two supporters, including our hardware teammate.",
+            "Then came the district-level competition.",
+            "And we came back with something we weren't expecting.",
+            "Second prize. A silver medal in the technical round.",
+            "And that result qualified the project for the university level.",
+            "It was another strange feeling. The project that had started as one SIH problem statement was now travelling through another competition too.",
+            "And we were beginning to realize that Dextra had become bigger than one competition."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Avishkar_District_win.jpeg`,
+            alt: "Second prize at the Avishkar district-level competition"
+          }
+        },
+        {
+          heading: "Then the Call Came",
+          paragraphs: [
+            "Around this same time, we were still working and waiting for the SIH result.",
+            "One evening, it was around 7:30 PM.",
+            "I had finished the day's work. I dropped my hardware teammate at his home and started riding toward mine.",
+            "Then my phone rang. It was him. I picked up.",
+            "And the first thing he said was:"
+          ],
+          quote: "Bro... we got selected."
+        },
+        {
+          heading: "Then the Call Came (continued)",
+          paragraphs: [
+            "I was literally riding my bike.",
+            "For a second, I didn't process it. Then it hit me.",
+            "Dextra had been selected for the Smart India Hackathon Grand Finale.",
+            "The competition I had wanted to experience since first year. The competition I had failed to reach in second year. The project we had almost abandoned.",
+            "We were going to the national stage.",
+            "When I reached home, I checked my phone. Our mentor was already celebrating in the group. Messages were coming in. Everyone was congratulating us.",
+            "And the next morning, when we came back to college, the atmosphere was completely different.",
+            "We had done it."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_Sortlisted.png`,
+            alt: "The SIH sortlist showing Team Dexterist selected for the Grand Finale"
+          }
+        },
+        {
+          heading: "This Time, We Celebrated Properly",
+          paragraphs: [
+            "The institutional selection had given us a small canteen treat.",
+            "But this was different. This was SIH national-level selection.",
+            "So this time, we went out properly. We went to a hotel. Had a full meal together. And cut a cake.",
+            "For a few hours, there were no circuits. No PPT. No deadlines. No judges.",
+            "Just six people sitting together and celebrating something we had been chasing for years.",
+            "It felt amazing.",
+            "But once again, the celebration had an expiry date. Because now we had to prepare for the biggest stage yet."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Party_after_Sih_selection.jpeg`,
+            alt: "Celebrating the SIH Grand Finale selection with a proper team dinner and cake"
+          }
+        },
+        {
+          heading: "And Then I Had an Idea",
+          paragraphs: [
+            "About a week later, another competition was approaching.",
+            "Mini Modeling.",
+            "And on the morning of the competition, I was looking at our Dextra prototype.",
+            "The basic system worked. But I started thinking:",
+            "Why can't we control this through a mobile phone?",
+            "Then another thought came. Why not add voice control too?",
+            "I immediately discussed the idea with our hardware and software teammates. They liked it. We took the idea to our mentor.",
+            "Even he was surprised by the direction. He liked the idea.",
+            "But then came the practical part. We were already close to the competition. So he told us not to risk the working prototype just to add something new.",
+            "We could present what we already had. Then we could develop the mobile and voice-control system further for SIH.",
+            "And that was exactly what we decided to do.",
+            "Sometimes engineering isn't about adding more. Sometimes it's about knowing when to stop changing something that already works."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/mobile_application_dextra.jpeg`,
+            alt: "Early look at the Dextra mobile application concept"
+          }
+        },
+        {
+          heading: "Mini Modeling",
+          paragraphs: [
+            "The Mini Modeling presentation went smoothly.",
+            "Our presenter handled the main explanation. But once the technical questions started, the situation changed.",
+            "Questions like: 'Why did you use this motor?' 'Why this mechanism?' 'Why not another one?'",
+            "This was the kind of questioning I had prepared for. So I took over the technical round.",
+            "One question. Answer. Another question. Answer. And the questions kept coming.",
+            "Eventually, one of the judges shook my hand. He told us that it was one of the best projects he had seen and that he genuinely wanted to see Dextra move toward the market level.",
+            "That moment meant a lot. Because someone outside our team was looking at what we had built and saying:"
+          ],
+          quote: "Take this further."
+        },
+        {
+          heading: "We Won Mini Modeling",
+          paragraphs: [
+            "By then, Dextra had already been through several competitions.",
+            "And Mini Modeling became another successful chapter.",
+            "We won the first prize.",
+            "Another result. Another little boost.",
+            "But this time, something felt different.",
+            "Because SIH was no longer a dream. It was coming."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Winning_mini_modelling.jpeg`,
+            alt: "Team Dexterist after winning first prize at Mini Modeling"
+          }
+        },
+        {
+          heading: "Now We Were Going to the National Stage",
+          paragraphs: [
+            "After Mini Modeling, our focus shifted completely. SIH.",
+            "Our mentor continued guiding us. There were preparation sessions and technical classes, including sessions around ESP32 and other technologies that could help teams strengthen their prototypes.",
+            "For us, there was a funny little advantage. We already knew ESP32.",
+            "So while some people were learning the basics, we were sitting there thinking: 'Okay... this part we already know.' 😂",
+            "But we attended everything. Because knowing something already doesn't mean there isn't something else to learn."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Mentoring_Support.jpeg`,
+            alt: "Mentoring sessions ahead of the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "The Component List",
+          paragraphs: [
+            "Our seniors gave us another important piece of advice.",
+            "Don't go to the national stage with old or unreliable components. Make a proper list. Ask for new components. Build the prototype properly.",
+            "So we prepared our component list. Electronics. Mechanical components. Everything we thought we needed.",
+            "We also started working on the problems we had already discovered.",
+            "Heating issues. Power requirements. Connections. Protection. The mechanism. The casing.",
+            "Everything slowly started becoming more serious."
+          ]
+        },
+        {
+          heading: "The Team Uniform",
+          paragraphs: [
+            "Then came another extremely important engineering task.",
+            "T-shirts. 😂",
+            "We went for printing. And because it was going to be cold in Delhi, we thought: why stop at T-shirts? Let's make hoodies too.",
+            "So now we had: Team Dexterist T-shirts. Team Dexterist hoodies. A national-level problem statement. A prototype.",
+            "And absolutely no idea what was waiting for us.",
+            "But at least we looked like a proper team. That counts for something."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Tshirt_printings.jpeg`,
+            alt: "Getting the Team Dexterist T-shirts and hoodies printed"
+          }
+        },
+        {
+          heading: "Booking the Tickets",
+          paragraphs: [
+            "Then came the tickets.",
+            "We had to travel from Wardha to Delhi, and then from Delhi toward the actual SIH venue at Galgotias University.",
+            "We went through the booking process. Checking availability. Finding seats. Booking the return journey. Making sure all six of us could travel.",
+            "It sounds like a small thing. But standing there and booking those tickets felt different.",
+            "Because suddenly the thought became real:",
+            "We're actually going."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_before_train_img.jpeg`,
+            alt: "Getting ready to leave for Delhi"
+          }
+        },
+        {
+          heading: "Delhi",
+          paragraphs: [
+            "Eventually, we reached Delhi.",
+            "For some of us, it was our first time there.",
+            "So before going to the actual hackathon, we had to explore a little.",
+            "We went to India Gate. Took photos. Looked around. Enjoyed the moment.",
+            "And then came the obvious conclusion: 'Okay boys, enough sightseeing. We have a hackathon to attend.' 😂",
+            "So we moved on."
+          ],
+          image: {
+  path: `${SIH_BLOG_IMG_2}/Group_explore_india_gate.png`,
+  alt: "Exploring India Gate before the hackathon began"
+}
+        },
+        {
+          heading: "Gautam Buddha University",
+          paragraphs: [
+            "Our accommodation was at Gautam Buddha University.",
+            "And honestly, it surprised us. It was one of the nicest accommodations I had experienced during a competition. It almost felt like a proper hotel-level setup.",
+            "But the most interesting part wasn't even the accommodation. It was the people.",
+            "The moment we entered, we could feel the pressure. Everyone was talking about their projects. Their prototypes. Their presentations. Their strategies.",
+            "Nobody was there casually. Everyone had come from somewhere in India with the same goal.",
+            "And suddenly, the scale of the competition became real."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Gautam_buddha_university_guesthouse.jpg`,
+            alt: "Our accommodation at Gautam Buddha University during SIH"
+          }
+        },
+        {
+          heading: "One Last Normal Night",
+          paragraphs: [
+            "That night, we had another small cultural difference.",
+            "We were from Maharashtra. The food was different from what we were used to.",
+            "So eventually, we ordered Domino's. We sat together. Ate. Talked. Laughed. And enjoyed the night.",
+            "Because somewhere inside, we knew:",
+            "Tomorrow everything was going to change."
+          ]
+        },
+        {
+          heading: "Welcome to SIH",
+          paragraphs: [
+            "The next morning, we reached the venue.",
+            "Registration. Checking in. Finding our table. Getting everything arranged.",
+            "Then came the inauguration ceremony. We sat down and watched the ceremony before the actual competition began.",
+            "After the inauguration and breakfast, the atmosphere changed completely.",
+            "Laptops opened. Components came out. Mentors started moving around. Teams took their positions.",
+            "And then it started.",
+            "The Smart India Hackathon Grand Finale."
+          ],
+          image: {
+  path: `${SIH_BLOG_IMG_2}/Galgotias_university_image.jpg`,
+  alt: "The Smart India Hackathon Grand Finale venue at Galgotias University"
+}
+        },
+        {
+          heading: "Day One — Our First Mistake",
+          paragraphs: [
+            "Before the first round, we had spoken with some seniors. They gave us advice: don't reveal everything immediately. Build gradually. Show progress as the days go on.",
+            "At the time, it sounded logical. So we followed it.",
+            "During the first mentoring round, we explained our concept. The judges were interested. But we held back from showing everything we had.",
+            "And honestly? That was one of our biggest mistakes.",
+            "Our presenter was nervous. The stage was completely different. The judges were different. The pressure was different.",
+            "And our first presentation didn't go the way we wanted.",
+            "We walked away knowing: we could have done better.",
+            "But the competition wasn't over. So we regrouped."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_mentoring_rounds_img.jpeg`,
+            alt: "The first mentoring round at the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "Everyone Had a Role",
+          paragraphs: [
+            "After the first round, I stepped in and made sure everyone knew what they had to do.",
+            "I gave the team their roles. The hardware work had to move faster. The software side had to continue the control system. The presenter had to prepare for the next presentation. The prototype had to keep improving.",
+            "And I kept moving between the concept, hardware, presentation, and whatever needed attention.",
+            "Everyone had their own responsibility.",
+            "From that point forward, the message was simple:"
+          ],
+          quote: "Build faster. Show more. Know your role. Don't wait for someone else.",
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_mentoring_rounds_img2.jpeg`,
+            alt: "Regrouping and assigning roles after the first round"
+          }
+        },
+        {
+          heading: "The Second Round — When I Lost My Temper",
+          paragraphs: [
+            "The next presentation didn't go the way we expected either.",
+            "Our presenter was nervous again, and the presentation started falling apart.",
+            "I was frustrated. Very frustrated.",
+            "And in that moment, I lost my temper. I shouted at one of my teammates.",
+            "Looking back now, honestly, I regret that moment.",
+            "It wasn't fair. It was their first experience at a stage like this too. They were young. They were nervous. And everyone was under pressure.",
+            "At that moment, I was thinking only about getting the presentation right.",
+            "But today, I understand that pressure isn't an excuse to take it out on someone else.",
+            "We moved forward. And I made sure I didn't repeat that mistake."
+          ]
+        },
+        {
+          heading: "The Days Started Blurring Together",
+          paragraphs: [
+            "From Day Two onward, there was a routine.",
+            "Morning yoga. Breakfast. Mentoring. Building. Testing. Presentation. Questions. More building. And then more building.",
+            "At night, there were also jamming sessions. There was a small window of free time late at night.",
+            "But many people weren't sleeping. Especially us. 😂",
+            "We had come there to compete. And the atmosphere made it difficult to simply switch off."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_working_together_img1.jpeg`,
+            alt: "The team working together during the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "Building Under Pressure",
+          paragraphs: [
+            "We developed the prototype further. We got our components. We worked on the mechanism. We designed the casing. We started integrating everything.",
+            "At one point, we even decided to make a PCB.",
+            "Looking back... we probably shouldn't have. 😂",
+            "The breadboard system already worked. We knew the circuit. But we wanted the prototype to look more complete.",
+            "So we started soldering. Testing. Connecting. Troubleshooting.",
+            "And suddenly, we had created another problem for ourselves. It took time. It added complexity. And it distracted us from the bigger goal.",
+            "That became another lesson:"
+          ],
+          quote: "A better prototype isn't always the more complicated prototype.",
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_working_together_img2.jpeg`,
+            alt: "Building and troubleshooting the prototype under pressure"
+          }
+        },
+        {
+          heading: "The Market Strategy Problem",
+          paragraphs: [
+            "Another important mistake came during one of the judging rounds.",
+            "The judges asked about our market strategy. We actually had the research. We had the information. We had another PPT with the details.",
+            "But there was one small problem. That PPT was on another laptop. And that laptop wasn't with us at the right moment.",
+            "By the time we tried to show it, the time was already almost over.",
+            "The judges understood that we had the information. But they made something very clear:"
+          ],
+          quote: "Having the information isn't enough. You have to show it when it matters.",
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_mentoring_rounds_img3.jpeg`,
+            alt: "Another judging round at the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "Make It Look Like Something We Can Buy",
+          paragraphs: [
+            "As the final stages approached, the judges wanted more.",
+            "They didn't just want electronics. They wanted a prototype that looked closer to an actual product.",
+            "So we went into full build mode. 3D printing. Casing. Assembly. Testing. Integration.",
+            "The pressure became intense.",
+            "The three of us who were working closely on the hardware, presentation, and final prototype were constantly around the project.",
+            "We worked in shifts. Three people would work. Then another three would take over.",
+            "And somehow, that cycle kept the project moving."
+          ]
+        },
+        {
+          heading: "The Fourth Night",
+          paragraphs: [
+            "By the fourth night, we were exhausted. But we were close.",
+            "The prototype was finally coming together. We reached a point where we could say: 'Okay. This is working.'",
+            "And then we made a decision. We could continue working through the night. Or we could sleep.",
+            "Me and my hardware teammate looked at each other. And chose sleep. 😂",
+            "We went to sleep properly. Not because we didn't care. Because we wanted to wake up fresh.",
+            "The final day was coming. And we wanted to be ready."
+          ]
+        },
+        {
+          heading: "Final Day",
+          paragraphs: [
+            "We woke up. Got ready. Put on our official SIH T-shirts.",
+            "The prototype was ready. The mobile application was ready. The voice module was ready. The switches were ready.",
+            "Everyone knew their role. For a moment, we felt ready to shine.",
+            "After everything we had gone through, this was the moment.",
+            "The final judging began. Our presenter started. The judges were interested. The presentation was moving well.",
+            "Then, somewhere in the middle, her voice started fumbling.",
+            "We looked at each other. And we knew.",
+            "It was time to take over.",
+            "I stepped in. I explained Dextra. The problem. The solution. The prototype. The mobile application. The voice module. The working.",
+            "Then another teammate joined in. Our hardware teammate was wearing the prototype.",
+            "The judges tested it. They gave him an object. They asked him to hold it. The mechanism responded. The hand responded.",
+            "The prototype worked.",
+            "For those few minutes, everything we had built came together.",
+            "We answered their questions. We demonstrated the system.",
+            "And eventually... it was over."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_finale_img1.jpeg`,
+            alt: "Demonstrating the Dextra prototype to the judges on the final day"
+          }
+        },
+        {
+          heading: "The Result",
+          paragraphs: [
+            "We walked away from the final judging.",
+            "Nobody said it immediately. But somewhere inside, I think we all knew.",
+            "We had done well. But we also knew something was missing.",
+            "This wasn't a normal college competition. We had seen teams from across India. Different ideas. Different approaches. Different levels of presentation. Different ways of selling a solution.",
+            "One team even approached the judges with something as simple as a leaflet.",
+            "And that made us realize something: the competition wasn't only about how much you had built. It was about how clearly you could communicate the value of what you had built.",
+            "We had built. We had demonstrated. We had tried our best.",
+            "But maybe we hadn't completely sold the idea.",
+            "And that difference mattered."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_finale_img2.jpeg`,
+            alt: "Final round moments at the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "The Name That Never Came",
+          paragraphs: [
+            "Then came the result announcement.",
+            "We knew there were two prizes for each problem statement. So naturally, there was still hope.",
+            "Maybe. Just maybe. Our name would come.",
+            "The announcements started. One team. Then another.",
+            "We waited. And waited.",
+            "But our name wasn't called.",
+            "Team Dexterist didn't win.",
+            "For a few minutes, it hurt. Of course it did.",
+            "We had spent so much time on Dextra. We had travelled all the way to the national stage. We had stayed awake. Built. Failed. Fixed. Presented. And hoped.",
+            "So walking away without the trophy wasn't easy.",
+            "But the competition had given us something that a trophy couldn't."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_group_holding_certi.jpeg`,
+            alt: "Team Dexterist with their SIH Grand Finale certificate"
+          }
+        },
+        {
+          heading: "The Night After SIH",
+          paragraphs: [
+            "After the competition ended, we went back to our rooms.",
+            "I was frustrated. My roommate was frustrated too.",
+            "We were probably among the people who had convinced ourselves the most that we were going to win. Because we had given the project so much of ourselves.",
+            "But that night, something interesting happened.",
+            "We didn't talk about the project. We didn't analyze the judges. We didn't discuss what went wrong.",
+            "We just sat together. Had some food. Talked about each other. Shared stories. Laughed.",
+            "And for the first time in days, we weren't Team Dexterist working on Dextra.",
+            "We were just six friends.",
+            "And honestly, that night is one of the memories I remember most."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_happy_glimps.jpeg`,
+            alt: "Six friends together after the competition ended"
+          }
+        },
+        {
+          heading: "Leaving Delhi",
+          paragraphs: [
+            "The next morning was our final day in Delhi.",
+            "Our train was in the afternoon. So before leaving, we did some shopping. Took photos. Walked around. And enjoyed the remaining time together.",
+            "Because photos are one of the few things that stay with us long after the moment itself is gone.",
+            "Then we boarded the train.",
+            "Delhi slowly disappeared behind us. And we headed home."
+          ]
+        },
+        {
+          heading: "Back to College",
+          paragraphs: [
+            "The next day, we returned to college.",
+            "And this time, it wasn't silent. Everyone wanted to know what happened.",
+            "People asked: 'How was it?' 'How was the final?' 'Did you enjoy Delhi?' 'How was the hackathon?'",
+            "People wanted to hear everything. They had seen us leave. Now they wanted to know what it felt like to actually be there.",
+            "And honestly, that felt good. Because even though we hadn't won, we had something to tell them.",
+            "We had experienced something most of us had only seen from outside. We had gone to the national stage. We had competed. We had built. We had learned. And we had come back with stories.",
+            "Our HOD also encouraged us not to stop there.",
+            "The message was simple: even if SIH didn't end with a trophy, Dextra could still go further.",
+            "And it did."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/After_sih_meeting_HOD.jpeg`,
+            alt: "Meeting our HOD after returning from the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "The Story Didn't End With SIH",
+          paragraphs: [
+            "The Avishkar journey continued.",
+            "Dextra went on to the university level, where it won a gold trophy."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Avishkar_uni_win.png`,
+            alt: "Dextra's gold trophy at the Avishkar university-level competition"
+          }
+        },
+        {
+          heading: "The Story Didn't End With SIH (continued)",
+          paragraphs: [
+            "Our presenter later represented the project at the state level of Avishkar. We didn't win at the state level. But reaching that stage itself was something we were proud of.",
+            "The same project that had started in our classroom had travelled that far.",
+            "We also presented Dextra at DIPEX, reaching the regional level.",
+            "We took the same problem statement to the Wardha Innovation competition, where we finished as runner-up.",
+            "And I also had the opportunity to receive the PhyTech International Award of Creativity for my contribution and work around the project.",
+            "Different competitions. Different stages. Different results.",
+            "But the same Dextra. The same journey."
+          ],
+        },
+        {
+          heading: "What We Actually Won",
+          paragraphs: [
+            "When I think about SIH now, I don't think about the result first.",
+            "I think about the journey.",
+            "The four friends who decided to build something together. The fifth teammate who joined. The sixth member who came into the team when we suddenly needed a new presenter.",
+            "The teammate who spent four hours turning seven minutes of footage into one final video. The hardware teammate who stayed close to the prototype. The presenter who joined with almost no preparation time and somehow made the presentation her own.",
+            "And all the small moments in between.",
+            "The canteen treat. The hotel celebration. The cake. The T-shirts. The hoodies. The ticket booking. The journey from Wardha to Delhi. Exploring Delhi. India Gate. The accommodation. The Domino's night. The morning yoga. The late-night jamming sessions. The engineers from different parts of India somehow communicating in English. 😂",
+            "The nervous presentations. The moment I lost my temper and later regretted it. The PCB we probably shouldn't have made. The market presentation stuck on another laptop. The four-hour video.",
+            "The bike ride where I heard: 'Bro... we got selected.'",
+            "The final prototype. The final judging. The result. And then the train ride home.",
+            "We didn't win the Smart India Hackathon. But we gained something that stayed with us.",
+            "Friendships. Experience. Confidence. Connections.",
+            "And a completely different understanding of what it means to build something with other people."
+          ],
+          image: {
+            path: `${SIH_BLOG_IMG_2}/Sih_happy_group_glimps.jpeg`,
+            alt: "Team Dexterist together after the SIH Grand Finale"
+          }
+        },
+        {
+          heading: "The Project That Became a Memory",
+          paragraphs: [
+            "Dextra started as a problem statement.",
+            "Then it became an idea. Then a prototype. Then a competition project. Then a project that travelled through multiple competitions and multiple levels.",
+            "And somewhere along the way... it became a part of our story.",
+            "We still remember that we lost SIH. Of course we do.",
+            "But when I think about those days now, the first thing that comes to my mind isn't the result.",
+            "It's the happiness. The jokes. The late nights. The friendships. The people we met. The things we learned. And the feeling of building something together.",
+            "Because sometimes, you don't get the trophy you wanted.",
+            "But you get something that lasts much longer."
+          ],
+          quote: "We didn't win the national trophy. But we definitely won a story worth remembering."
+        }
+      ],
+      footer:
+        "This is Part II of the Dextra story — the road from selection to the SIH Grand Finale, and everywhere Dextra went after.\n\n— Karan Mendhe"
     }
   }
 ];
