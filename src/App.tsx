@@ -12,6 +12,7 @@ import {
   CertificationData
 } from './data';
 import Blog from './Blog';
+import { navigate, goBack, onRouteChange } from './router';
 
 /* --- Inline SVGs matching user's design --- */
 const IconChevron = () => (
@@ -106,6 +107,33 @@ export default function App() {
   const [activeProject, setActiveProject] = useState<ProjectData | null>(null);
   const [activeCert, setActiveCert] = useState<CertificationData | null>(null);
   const [showBlog, setShowBlog] = useState(false);
+
+  // Sync activeProject/showBlog with the URL, so native back/forward and
+  // direct links to /projects/:id or /blog work correctly. This runs once
+  // on mount (to honor the current URL) and again on every popstate event
+  // (native back/forward, or a programmatic navigate() call elsewhere).
+  useEffect(() => {
+    const applyRouteFromUrl = () => {
+      const path = window.location.pathname;
+      const projectMatch = path.match(/^\/projects\/([^/]+)\/?$/);
+      if (projectMatch) {
+        const proj = PROJECTS.find((p) => p.id === projectMatch[1]);
+        setActiveProject(proj || null);
+        setShowBlog(false);
+        return;
+      }
+      if (path === '/blog' || path.startsWith('/blog/')) {
+        setActiveProject(null);
+        setShowBlog(true);
+        return;
+      }
+      setActiveProject(null);
+      setShowBlog(false);
+    };
+
+    applyRouteFromUrl();
+    return onRouteChange(applyRouteFromUrl);
+  }, []);
 
   // Accordion states
   const [allSkillsExpanded, setAllSkillsExpanded] = useState(false);
@@ -267,7 +295,7 @@ export default function App() {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        if (activeProject) setActiveProject(null);
+        if (activeProject) goBack();
         if (activeCert) setActiveCert(null);
       }
     };
@@ -328,12 +356,12 @@ export default function App() {
   const openProjectCaseStudy = (projectId: string) => {
     const proj = PROJECTS.find((p) => p.id === projectId);
     if (proj) {
-      setActiveProject(proj);
+      navigate(`/projects/${projectId}`);
     }
   };
 
   return showBlog ? (
-    <Blog onBack={() => setShowBlog(false)} />
+    <Blog />
   ) : (
     <div id="app-root">
       {/* Navigation Bar */}
@@ -415,7 +443,7 @@ export default function App() {
                 <div className="hero-actions reveal" style={{ transitionDelay: '.45s' }}>
                   <a href="#resume" className="btn btn-primary">Download Resume</a>
                   <a href="#projects" className="btn btn-outline">View Projects</a>
-                  <button onClick={() => setShowBlog(true)} className="btn btn-outline">View My Blog</button>
+                  <button onClick={() => navigate('/blog')} className="btn btn-outline">View My Blog</button>
                   <a href="#contact" className="btn btn-ghost">Contact Me</a>
                 </div>
               </div>
@@ -1257,7 +1285,14 @@ export default function App() {
               <h5>Projects</h5>
               <div>
                 {PROJECTS.map((p) => (
-                  <a key={p.id} href="#projects" onClick={() => openProjectCaseStudy(p.id)}>
+                  <a
+                    key={p.id}
+                    href="#projects"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openProjectCaseStudy(p.id);
+                    }}
+                  >
                     {p.name}
                   </a>
                 ))}
@@ -1313,7 +1348,7 @@ export default function App() {
         <div className="project-expanded open" id={`expanded-${activeProject.id}`}>
           <button
             className="back-to-projects"
-            onClick={() => setActiveProject(null)}
+            onClick={() => goBack()}
           >
             <IconArrowLeft /> Back to Projects
           </button>

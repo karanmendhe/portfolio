@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { navigate, goBack, onRouteChange } from "./router";
 
 type BlogProps = {
   onBack?: () => void;
@@ -1237,6 +1238,38 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
   const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
+  // Sync selectedCategory/selectedPostId with the URL. Runs once on mount
+  // (so a direct link or a refresh on /blog/category/:id or
+  // /blog/post/:id lands on the right view) and again on every popstate
+  // (native back/forward, or a programmatic navigate() elsewhere).
+  useEffect(() => {
+    const applyRouteFromUrl = () => {
+      const path = window.location.pathname;
+
+      const postMatch = path.match(/^\/blog\/post\/([^/]+)\/?$/);
+      if (postMatch) {
+        const post = BLOG_POSTS.find((p) => p.id === postMatch[1]);
+        setSelectedPostId(post ? post.id : null);
+        setSelectedCategory(post ? post.category : null);
+        return;
+      }
+
+      const categoryMatch = path.match(/^\/blog\/category\/([^/]+)\/?$/);
+      if (categoryMatch) {
+        const cat = CATEGORIES.find((c) => c.id === categoryMatch[1]);
+        setSelectedPostId(null);
+        setSelectedCategory(cat ? cat.name : null);
+        return;
+      }
+
+      setSelectedPostId(null);
+      setSelectedCategory(null);
+    };
+
+    applyRouteFromUrl();
+    return onRouteChange(applyRouteFromUrl);
+  }, []);
+
   const selectedPost = selectedPostId
     ? BLOG_POSTS.find((post) => post.id === selectedPostId)
     : null;
@@ -2100,7 +2133,7 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                       <button
                         key={category.id}
                         className="category-card"
-                        onClick={() => setSelectedCategory(category.name)}
+                        onClick={() => navigate(`/blog/category/${category.id}`)}
                       >
                         <div>
                           <h3 className="category-card-title">
@@ -2126,7 +2159,7 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                 <button
                   className="back-to-button"
                   onClick={() => {
-                    setSelectedCategory(null);
+                    goBack();
                     window.scrollTo(0, 0);
                   }}
                 >
@@ -2180,7 +2213,7 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                             <button
                               className="blog-post-link"
                               onClick={() => {
-                                setSelectedPostId(post.id);
+                                navigate(`/blog/post/${post.id}`);
                                 window.scrollTo(0, 0);
                               }}
                             >
@@ -2218,7 +2251,7 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
             <button
               className="back-to-button"
               onClick={() => {
-                setSelectedPostId(null);
+                goBack();
                 window.scrollTo(0, 0);
               }}
             >

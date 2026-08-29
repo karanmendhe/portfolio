@@ -11,6 +11,25 @@
 
     <title>Karan Mendhe — Electrical Engineering Portfolio</title>
 
+    <script>
+      // Counterpart to public/404.html: if we arrived here via the GitHub
+      // Pages redirect (a direct link or refresh on a route like
+      // /projects/dextra or /blog/post/post-01), restore the real path
+      // in the address bar before the app mounts, so the app's own route
+      // parsing sees the correct URL.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get('redirect');
+        if (redirect) {
+          params.delete('redirect');
+          var rest = params.toString();
+          var separator = redirect.indexOf('?') === -1 ? '?' : '&';
+          var restoredUrl = redirect + (rest ? separator + rest : '');
+          window.history.replaceState(null, '', restoredUrl);
+        }
+      })();
+    </script>
+
     <link rel="icon" type="image/png" href="/assets/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

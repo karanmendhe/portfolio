@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages is a static host — it has no server-side rewrites,
+      // so any path other than the site root (e.g. /projects/dextra,
+      // /blog/post/post-01) lands here on a refresh or direct link.
+      // We redirect back to the real index.html, encoding the originally
+      // requested path so index.html can restore it before the app mounts.
+      var loc = window.location;
+      var requestedPath = loc.pathname + loc.search + loc.hash;
+      loc.replace(loc.origin + '/?redirect=' + encodeURIComponent(requestedPath));
+    </script>
+  </head>
+  <body></body>
+</html>
