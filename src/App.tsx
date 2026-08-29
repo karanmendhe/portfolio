@@ -660,7 +660,6 @@ export default function App() {
               <div className="pill-row reveal" style={{ marginBottom: '48px' }}>
                 <span className="pill"><span className="pill-dot"></span>GATE 2027 Preparation (Electrical Engineering)</span>
                 <span className="pill"><span className="pill-dot"></span>PCB Design (KiCad)</span>
-                <span className="pill"><span className="pill-dot"></span>PCB Design (Altium Designer)</span>
                 <span className="pill"><span className="pill-dot"></span>AutoCAD Electrical</span>
               </div>
 
@@ -870,8 +869,8 @@ export default function App() {
               </p>
 
               <div className="snapshot-grid reveal" style={{ gridTemplateColumns: 'repeat(4, 1fr)', marginBottom: '64px' }}>
-                <div className="snapshot-card"><div className="snapshot-number mono">6</div><div className="snapshot-label">Certifications</div></div>
-                <div className="snapshot-card"><div className="snapshot-number mono">5</div><div className="snapshot-label">Issuing Organizations</div></div>
+<div className="snapshot-card"><div className="snapshot-number mono">7</div><div className="snapshot-label">Certifications</div></div>
+<div className="snapshot-card"><div className="snapshot-number mono">6</div><div className="snapshot-label">Issuing Organizations</div></div>
                 <div className="snapshot-card"><div className="snapshot-number mono" style={{ fontSize: '20px' }}>Multiple</div><div className="snapshot-label">Engineering Domains</div></div>
                 <div className="snapshot-card"><div className="snapshot-number mono" style={{ fontSize: '20px' }}>Ongoing</div><div className="snapshot-label">Continuous Learner</div></div>
               </div>

@@ -513,6 +513,7 @@ export const SKILLS: SkillCategory[] = [
     ] },
   { category: "Technical Software", skills: [
       { name: "AutoCAD Electrical", appliedIn: ["Electrical Design & Drafting"] },
+      { name: "Altium Designer", learnedThrough: ["PCB Design (Altium Designer)"] },
       { name: "Microsoft PowerPoint", experience: ["Technical Presentations"] },
       { name: "Canva", experience: ["Posters", "Technical Presentations"] },
       { name: "Graphic Design", appliedIn: ["Posters", "Project Presentations"] },
@@ -556,7 +557,7 @@ export const CERTIFICATIONS: CertificationData[] = [
     skills: ["Critical Thinking", "Decision Making", "Psychology", "Human Behaviour", "Behavioural Analysis", "Problem Solving"],
     verify: "https://coursera.org/verify/5TEZO0IT2CH8" },
   { name: "Excel Basic to Advanced", organization: "Cursa", date: "18–26 June 2026",
-    image: "/assets/certifications/excel.jpg",
+    image: "/assets/certifications/excel_cursa.jpeg",
     description: "Spreadsheets, formulas, functions, data management, calculations, charts, and productivity techniques for engineering documentation and analysis.",
     skills: ["Microsoft Excel", "Data Analysis", "Spreadsheets", "Formulas", "Charts", "Data Organization"],
     verify: null, validationCode: "b5a83ca96635646bc01fffc2ce249308" },
@@ -565,6 +566,12 @@ export const CERTIFICATIONS: CertificationData[] = [
     description: "PCB layout and design fundamentals, complementing hands-on hardware prototyping work across the Dextra, REYNEX, and DC–DC converter projects.",
     skills: ["PCB Design", "PCB Layout", "Circuit Design", "Hardware Design", "Electronics"],
     verify: null, certCode: "10510735" },
+      { name: "PCB Design (Altium Designer)", organization: "Altium Education", date: "15 August 2026",
+    image: "/assets/certifications/altium_pcb_certi.jpeg",
+    description: "Completed the Altium Education PCB Basic Design Course — fundamentals of PCB layout and design using Altium Designer.",
+    skills: ["Altium Designer", "PCB Design", "PCB Layout", "Circuit Design", "Hardware Design"],
+    verify: null, certCode: "cert_v5qdrccl" },
+
 ];
 
 export const LEARNING_JOURNEY_ORDER = [
