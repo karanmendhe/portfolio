@@ -62,6 +62,7 @@ const CATEGORIES: CategoryInfo[] = [
 
 const SIH_BLOG_IMG = "/assets/Blog_Images/SIH blog img/SIH_BLOG_Part_1_images";
 const SIH_BLOG_IMG_2 = "/assets/Blog_Images/SIH blog img/SIH_BLOG_Part_2_images";
+const SOLAR_BLOG_IMG = "/assets/Blog_Images/Solar_technical";
 
 const BLOG_POSTS: BlogPost[] = [
   {
@@ -1231,7 +1232,200 @@ const BLOG_POSTS: BlogPost[] = [
       footer:
         "This is Part II of the Dextra story — the road from selection to the SIH Grand Finale, and everywhere Dextra went after.\n\n— Karan Mendhe"
     }
-  }
+  },
+  {
+    id: "post-04",
+    number: "04",
+    title: "The Solar Shift: From Electricity Consumers to Energy Producers",
+    excerpt:
+      "Rooftop solar is moving from an alternative power source toward a complete household energy system involving generation, storage, smart management, maintenance and the grid.",
+    category: "Technical",
+    date: "August 2026",
+    readingTime: "10 min read",
+    content: {
+      sections: [
+        {
+          heading: "From Electricity Consumers to Energy Producers",
+          paragraphs: [
+            "For decades, the electricity system around an Indian household has been relatively simple: Power plant → Grid → House → Electricity Bill.",
+            "We consume electricity, the grid supplies it, and at the end of the month we pay for what we used.",
+            "But that model is changing.",
+            "In my own surroundings, I can roughly observe five to seven out of ten houses moving towards solar or already using it. That is not a national statistic — it is simply my personal observation. What made me interested was not just the number of rooftops, but what happens when electricity consumption keeps increasing and households start producing part of their own power.",
+            "My view is that the next stage of rooftop solar will not be only about adding more panels. It will be about batteries, inverters, smart meters, monitoring, automation, maintenance, grid integration and eventually microgrids."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/rooftop_solar.jpg`,
+            alt: "Rooftop solar panels installed on a residential building"
+          }
+        },
+        {
+          heading: "India's Solar Transition Is Already Happening",
+          paragraphs: [
+            "This is not only a future prediction. According to the Ministry of New and Renewable Energy, India's installed solar capacity reached 164.59 GW as of July 31, 2026, including 30.74 GW of grid-connected rooftop solar.",
+            "The government is also encouraging residential adoption through PM Surya Ghar: Muft Bijli Yojana. Under the current central subsidy structure, residential consumers receive ₹30,000 per kW for the first 2 kW and ₹18,000 for the third kW, with the central subsidy capped at ₹78,000.",
+            "For many families, the important question is therefore not whether solar works, but whether the initial investment is affordable. Subsidies, financing options and local installers are making that decision easier for more households."
+          ]
+        },
+        {
+          heading: "Why I Think Rooftop Solar Will Keep Growing",
+          paragraphs: [
+            "My five-year thinking is not that every Indian house will become completely independent from the grid. It is based on a simpler trend: electricity consumption is increasing.",
+            "A typical middle-class household can have an air conditioner, refrigerator, television, fans, lighting, washing machine, induction cooktop, water heater, water purifier, computer, smartphones and chargers. As more appliances enter a household, the electricity requirement naturally increases.",
+            "From my own observation, an electricity-intensive middle-class household in my surroundings can see a monthly bill of roughly ₹4,000–₹4,500. That is my local observation, not a national average.",
+            "As consumption rises, generating at least part of that electricity locally becomes increasingly attractive. That is why I see rooftop solar becoming part of the infrastructure of a house rather than simply another appliance."
+          ]
+        },
+        {
+          heading: "A 3 kW Rooftop System",
+          paragraphs: [
+            "The 3 kW residential system is particularly interesting because it fits into the current subsidy structure. The exact number of panels depends on their individual rating.",
+            "For example, 3,000 W ÷ 550 W ≈ 5.45, so a 3 kW system using 550 W modules would require approximately six panels.",
+            "A 550 W module can occupy roughly 2.6 square metres, so six panels alone can require around 15–16 square metres of panel area. The actual roof requirement is higher because mounting structures, spacing, access and maintenance clearance also need to be considered.",
+            "For a household with limited roof space, higher-efficiency modules can therefore be valuable because they can produce more electricity from approximately the same area."
+          ]
+        },
+        {
+          heading: "Solar Is an Energy System, Not Just a Panel",
+          paragraphs: [
+            "A rooftop installation is more than photovoltaic modules. The panels generate DC electricity, the inverter converts it into usable AC electricity, and the system then manages that electricity between household loads, storage and the grid.",
+            "In Maharashtra, rooftop systems can interact with the distribution network through MSEDCL's rooftop-solar and net-metering framework. When a grid-connected system produces more electricity than the household is using, surplus electricity can be exported to the grid under the applicable metering and billing rules. When household demand is higher than solar generation, electricity can be imported from the grid.",
+            "In simple terms: solar generation minus household consumption determines whether electricity is available for storage or export, while the grid provides the balancing supply when solar is insufficient."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/Solar_block_diagram_inverter_battery.png`,
+            alt: "Solar rooftop system block diagram showing panels, inverter, battery, house and grid"
+          }
+        },
+        {
+          heading: "Why I Would Still Keep the Grid Today",
+          paragraphs: [
+            "If I had ₹2 lakh available today, I would personally consider investing it in a rooftop solar system. But I would probably not add a large battery immediately.",
+            "For today's situation, I would rather use a grid-connected system where solar supplies the house and excess electricity interacts with the grid. Solar generation changes with weather and time of day, while the grid remains available when generation is low.",
+            "So I do not see the future as eliminating the grid. I see it as reducing our dependence on the grid while making the household capable of generating and managing more of its own electricity."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/solar_grid.jpg`,
+            alt: "Solar energy system connected with the electricity grid"
+          }
+        },
+        {
+          heading: "The Future: Solar + Battery + Grid",
+          paragraphs: [
+            "Over the next five to ten years, I expect batteries to become increasingly important. A future household could use solar generation for its immediate loads, charge a battery with excess daytime energy, and export remaining surplus to the grid.",
+            "After sunset, the battery could supply household loads. During a power cut, it could also provide backup. If the battery becomes insufficient, the grid can take over.",
+            "That gives the battery three practical roles: storing excess daytime solar, supplying electricity after sunset, and providing backup during outages.",
+            "Lithium-ion batteries dominate today's market. Within lithium-ion technologies, LFP (lithium iron phosphate) is increasingly important for stationary storage because it generally offers strong cycle life and thermal stability, although it has lower energy density than chemistries such as NMC. For a stationary home battery, safety, lifetime and cost can matter more than maximum energy density.",
+            "The future battery does not necessarily have to be a larger version of today's battery. It could become cheaper, safer, longer-lasting and more specifically designed for stationary energy storage."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/solar_battery_inverter.jpg`,
+            alt: "Residential solar battery and inverter energy storage system"
+          }
+        },
+        {
+          heading: "The Grid Will Have to Change Too",
+          paragraphs: [
+            "If millions of homes generate solar electricity, the grid will experience a different pattern of demand. During sunny afternoons, solar generation can be high while household demand is moderate. Around sunset, solar generation falls while household demand can rise as people return home, switch on lights, use fans and air conditioners, cook and potentially charge electric vehicles.",
+            "This creates the familiar duck-curve or net-load challenge associated with high solar penetration.",
+            "The answer is not necessarily to reduce solar generation. Excess electricity can instead be stored, exported, used for flexible daytime loads, used to charge batteries or EVs, supported by stronger transmission and managed through smarter grid systems.",
+            "To me, this is an important shift in thinking: excess solar is not automatically a failure of solar. It is a signal that storage, transmission and grid management need to become smarter."
+          ]
+        },
+        {
+          heading: "Solar Efficiency Is Still Moving Forward",
+          paragraphs: [
+            "One correction to my earlier understanding is that modern photovoltaic modules should not simply be described as a 15% efficient technology. Commercial modules today are commonly in the high-teens to low-twenties in module efficiency, depending on the technology and product.",
+            "NREL research also shows that photovoltaic modules gradually lose performance as they age. A commonly used planning range for degradation is around 0.5–1% per year, although actual degradation depends on module technology, environment and operating conditions.",
+            "That means a panel's 25-year life does not mean it produces exactly the same amount of electricity for 25 years. What matters is the useful energy output across its operating life and how well the system is maintained.",
+            "At the same time, technologies such as TOPCon, silicon heterojunction, IBC and tandem cells are pushing photovoltaic efficiency higher. NREL technology and cost modelling has considered module efficiencies approaching 25%, while research and industry roadmaps explore even higher values for advanced architectures.",
+            "So my expectation that future rooftop systems could reach around 25% module efficiency is consistent with the direction of current photovoltaic research. If better panels become affordable, the same rooftop area could potentially produce substantially more electricity."
+          ]
+        },
+        {
+          heading: "Maintenance and Monitoring Could Become Smarter",
+          paragraphs: [
+            "Solar panels can operate for decades, but they cannot simply be installed and forgotten. Dust, heat, weather exposure and component ageing can reduce performance.",
+            "Today, cleaning can involve manual work or relatively simple water-based systems. In the future, I can see automated water-spraying systems becoming more common for households, while large solar farms could increasingly use robotic or automated cleaning systems.",
+            "Monitoring is another major opportunity. A homeowner should eventually be able to see, in near real time, how much solar energy was generated, how much was consumed, how much went into the battery, how much was exported and how much was imported.",
+            "That would turn solar from a passive generator into an intelligent energy-management system."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/solar_manual_cleaning.jpg`,
+            alt: "Manual cleaning and maintenance of rooftop solar panels"
+          }
+        },
+        {
+          heading: "From Rooftops to Microgrids",
+          paragraphs: [
+            "Solar does not have to stop at individual houses. A community can also generate and manage electricity locally.",
+            "One documented example is the Lakshmipura-Jharla solar microgrid project in Rajasthan, which demonstrates how local solar generation can be combined with local electricity distribution and energy-efficient appliances for rural households.",
+            "At a completely different scale, Bhadla Solar Park in Rajasthan represents large-scale solar generation feeding the wider electricity system. Its arid location and very large installed capacity make it one of India's best-known solar developments.",
+            "These examples show two different directions: a microgrid focuses on local generation, local distribution and local control, while a solar park focuses on large-scale generation connected to the wider power system.",
+            "The common idea is that electricity generation is becoming increasingly renewable and, in some applications, increasingly distributed."
+          ],
+          image: {
+            path: `${SOLAR_BLOG_IMG}/rajasthan_solar_park_example.jpg`,
+            alt: "Large-scale solar development in Rajasthan, representing India's solar expansion"
+          }
+        },
+        {
+          heading: "What Happens to Coal and Other Energy Sources?",
+          paragraphs: [
+            "If solar and other renewable sources continue to expand, the role of coal in electricity generation can gradually decline. That does not mean coal plants disappear immediately. India's electricity demand is still growing, and reliable power is still required.",
+            "However, every additional unit of electricity generated from renewable sources can reduce the amount of fossil fuel generation required elsewhere in the system, depending on grid conditions and demand.",
+            "I also do not see the future as Solar versus Everything Else. A more realistic energy system is likely to combine solar, wind, hydro, nuclear, storage, transmission and smart-grid technologies."
+          ]
+        },
+        {
+          heading: "EVs Will Become Part of This Energy System Too",
+          paragraphs: [
+            "Electric vehicles are another piece of the future energy system. There is growing interest in using EV batteries for grid-support applications such as vehicle-to-grid operation.",
+            "But battery degradation needs to be considered. An EV battery has a finite degradation profile, and additional cycling for grid services could affect long-term battery health. That does not make vehicle-to-grid technology a bad idea; it means the economics need to answer an important question: who pays for the additional battery degradation?",
+            "If that problem is solved properly, EVs could eventually become another distributed storage resource alongside stationary batteries."
+          ]
+        },
+        {
+          heading: "Solar Will Create More Than Electricity",
+          paragraphs: [
+            "A large-scale transition will also create work across the energy ecosystem. Installation technicians, electrical engineers, battery specialists, inverter technicians, monitoring specialists, maintenance workers, cleaning services, recycling professionals, software developers, grid-integration engineers and manufacturing workers will all have roles to play.",
+            "Local installers are especially important because they turn national policy into an actual working system on an ordinary person's rooftop.",
+            "As adoption grows, I expect the scope of these jobs to expand from installation into monitoring, maintenance, automation, storage and grid management."
+          ]
+        },
+        {
+          heading: "What I Think the Future Household Will Look Like",
+          paragraphs: [
+            "I do not imagine every Indian house disconnecting from the grid. I imagine something more practical: Rooftop Solar + Smart Inverter + Battery + Smart Meter + Grid Connection.",
+            "The system could automatically route electricity between generation, storage, consumption and the grid based on real-time conditions instead of requiring the homeowner to make every decision manually.",
+            "The household would no longer simply buy electricity. It would generate, store, manage, consume and potentially export electricity."
+          ]
+        },
+        {
+          heading: "The Biggest Change Isn't the Solar Panel",
+          paragraphs: [
+            "For me, the biggest change solar energy can bring to an ordinary Indian household is not simply a lower electricity bill. It is reduced dependence on externally generated electricity.",
+            "Saving money will probably remain the first reason many people install solar. But over the long run, I do not think the value should be measured only in rupees.",
+            "A rooftop system can operate for decades. During that time, electricity demand will change, battery technology will evolve, photovoltaic efficiency will improve, and the grid will become smarter.",
+            "That is why I see solar less as a short-term investment and more as an adaptation to the way the energy system is changing."
+          ]
+        },
+        {
+          heading: "Conclusion",
+          paragraphs: [
+            "The traditional electricity model was simple: Generate → Transmit → Consume.",
+            "The emerging model is more complicated: Generate → Store → Manage → Consume → Export.",
+            "And I think that is the real solar shift.",
+            "The solar panel is only the beginning. Better batteries, smarter inverters, intelligent monitoring, automated maintenance, stronger grid integration, microgrids, EVs and advanced storage are all pieces of the same energy system.",
+            "There will be battery costs, maintenance requirements, grid-management problems, recycling questions and technology replacement. I do not see those challenges as reasons to slow the transition. I see them as engineering problems waiting to be solved.",
+            "The Sun is not going anywhere. Our demand for electricity is not going anywhere either. So the real question is not whether solar energy has a future. The real question is how intelligently we build that future."
+          ],
+          quote: "Generate → Store → Manage → Consume → Export",
+        }
+      ],
+      footer:
+               "This is my technical overview of where I think solar energy is heading — from rooftop generation and grid-connected systems toward smarter, more distributed and better-managed energy systems. — Karan Mendhe"
+    }
+  },
 ];
 
 const Blog: React.FC<BlogProps> = ({ onBack }) => {
