@@ -4,7 +4,6 @@ import {
   PROJECTS,
   SKILLS,
   CERTIFICATIONS,
-  LEARNING_JOURNEY_ORDER,
   HACKATHONS,
   TRAININGS,
   ProjectData,
@@ -914,24 +913,6 @@ export default function App() {
                     </div>
                   </div>
                 ))}
-              </div>
-
-              {/* Learning Journey Timeline */}
-              <p className="section-eyebrow reveal">Learning journey</p>
-              <div style={{ marginBottom: '72px', maxWidth: '600px' }}>
-                <div className="timeline reveal">
-                  {LEARNING_JOURNEY_ORDER.map((name) => {
-                    const cert = CERTIFICATIONS.find((c) => c.name === name);
-                    if (!cert) return null;
-                    return (
-                      <div className="timeline-item" key={name}>
-                        <div className="timeline-year mono">{cert.date}</div>
-                        <div className="timeline-title">{cert.name}</div>
-                        <div className="timeline-sub">{cert.organization}</div>
-                      </div>
-                    );
-                  })}
-                </div>
               </div>
 
               {/* Skills Gained Accordion */}
