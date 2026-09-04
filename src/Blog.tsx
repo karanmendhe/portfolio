@@ -1431,6 +1431,26 @@ const BLOG_POSTS: BlogPost[] = [
 const Blog: React.FC<BlogProps> = ({ onBack }) => {
   const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [philosophyNoticeOpen, setPhilosophyNoticeOpen] = useState(false);
+  const [philosophyNoticeAccepted, setPhilosophyNoticeAccepted] = useState(false);
+
+  const handleCategoryClick = (category: CategoryInfo) => {
+    if (category.id === "philosophy") {
+      setPhilosophyNoticeAccepted(false);
+      setPhilosophyNoticeOpen(true);
+      return;
+    }
+
+    navigate(`/blog/category/${category.id}`);
+  };
+
+  const continueToPhilosophy = () => {
+    if (!philosophyNoticeAccepted) return;
+
+    setPhilosophyNoticeOpen(false);
+    navigate("/blog/category/philosophy");
+    window.scrollTo(0, 0);
+  };
 
   // Sync selectedCategory/selectedPostId with the URL. Runs once on mount
   // (so a direct link or a refresh on /blog/category/:id or
@@ -1915,6 +1935,162 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
           stroke-width: 2;
         }
 
+        .philosophy-notice-backdrop {
+          position: fixed;
+          inset: 0;
+          z-index: 1000;
+          display: grid;
+          place-items: center;
+          padding: 24px;
+          background: rgba(2, 6, 23, 0.78);
+          backdrop-filter: blur(10px);
+          animation: philosophyFadeIn 0.2s ease-out;
+        }
+
+        .philosophy-notice {
+          position: relative;
+          width: min(620px, 100%);
+          max-height: min(760px, calc(100vh - 48px));
+          overflow-y: auto;
+          padding: 42px;
+          border: 1px solid rgba(148, 163, 184, 0.2);
+          border-radius: 26px;
+          background:
+            radial-gradient(circle at 85% 8%, rgba(56, 189, 248, 0.11), transparent 32%),
+            rgba(7, 11, 18, 0.97);
+          box-shadow: 0 35px 100px rgba(0, 0, 0, 0.55);
+          animation: philosophySlideUp 0.28s ease-out;
+        }
+
+        .philosophy-notice::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 12%;
+          right: 12%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #38bdf8, #2563eb, transparent);
+        }
+
+        .philosophy-notice-eyebrow {
+          margin-bottom: 14px;
+          color: #38bdf8;
+          font-family: "Courier New", monospace;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+        }
+
+        .philosophy-notice-title {
+          margin: 0;
+          color: #f8fafc;
+          font-size: clamp(30px, 5vw, 42px);
+          line-height: 1.1;
+          letter-spacing: -0.045em;
+        }
+
+        .philosophy-notice-lead {
+          margin: 18px 0 0;
+          color: #e2e8f0;
+          font-size: 17px;
+          line-height: 1.75;
+        }
+
+        .philosophy-notice-copy {
+          margin: 16px 0 0;
+          color: #94a3b8;
+          font-size: 15px;
+          line-height: 1.8;
+        }
+
+        .philosophy-notice-check {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          margin-top: 26px;
+          padding: 15px 16px;
+          border: 1px solid rgba(148, 163, 184, 0.14);
+          border-radius: 14px;
+          background: rgba(15, 23, 42, 0.55);
+          color: #cbd5e1;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+
+        .philosophy-notice-check input {
+          width: 18px;
+          height: 18px;
+          margin: 2px 0 0;
+          flex: 0 0 auto;
+          accent-color: #38bdf8;
+          cursor: pointer;
+        }
+
+        .philosophy-notice-actions {
+          display: flex;
+          justify-content: flex-end;
+          gap: 12px;
+          margin-top: 24px;
+        }
+
+        .philosophy-notice-button {
+          min-height: 44px;
+          padding: 11px 18px;
+          border-radius: 11px;
+          border: 1px solid rgba(148, 163, 184, 0.2);
+          font-size: 14px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .philosophy-notice-button.back {
+          background: rgba(15, 23, 42, 0.7);
+          color: #cbd5e1;
+        }
+
+        .philosophy-notice-button.back:hover {
+          border-color: rgba(148, 163, 184, 0.35);
+          color: #f8fafc;
+          transform: translateY(-1px);
+        }
+
+        .philosophy-notice-button.continue {
+          border-color: rgba(56, 189, 248, 0.35);
+          background: linear-gradient(135deg, #38bdf8, #2563eb);
+          color: white;
+          box-shadow: 0 10px 28px rgba(37, 99, 235, 0.22);
+        }
+
+        .philosophy-notice-button.continue:hover:not(:disabled) {
+          transform: translateY(-1px);
+          box-shadow: 0 14px 34px rgba(37, 99, 235, 0.3);
+        }
+
+        .philosophy-notice-button.continue:disabled {
+          opacity: 0.4;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
+
+        @keyframes philosophyFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+        @keyframes philosophySlideUp {
+          from {
+            opacity: 0;
+            transform: translateY(12px) scale(0.98);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
         .category-header {
           padding: 55px 0 0;
           max-width: 850px;
@@ -2241,6 +2417,34 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
           }
         }
 
+        @media (max-width: 700px) {
+          .philosophy-notice-backdrop {
+            padding: 14px;
+          }
+
+          .philosophy-notice {
+            padding: 30px 24px;
+            border-radius: 21px;
+            max-height: calc(100vh - 28px);
+          }
+
+          .philosophy-notice-lead {
+            font-size: 16px;
+          }
+
+          .philosophy-notice-copy {
+            font-size: 14px;
+          }
+
+          .philosophy-notice-actions {
+            flex-direction: column-reverse;
+          }
+
+          .philosophy-notice-button {
+            width: 100%;
+          }
+        }
+
         @media (max-width: 430px) {
           .blog-brand span {
             font-size: 15px;
@@ -2327,7 +2531,7 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
                       <button
                         key={category.id}
                         className="category-card"
-                        onClick={() => navigate(`/blog/category/${category.id}`)}
+                        onClick={() => handleCategoryClick(category)}
                       >
                         <div>
                           <h3 className="category-card-title">
@@ -2514,6 +2718,80 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
               </div>
             </article>
           </>
+        )}
+
+        {philosophyNoticeOpen && (
+          <div
+            className="philosophy-notice-backdrop"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="philosophy-notice-title"
+          >
+            <div className="philosophy-notice">
+              <div className="philosophy-notice-eyebrow">A personal perspective</div>
+
+              <h2 id="philosophy-notice-title" className="philosophy-notice-title">
+                Before You Explore
+              </h2>
+
+              <p className="philosophy-notice-lead">
+                These are my personal thoughts, not absolute truths.
+              </p>
+
+              <p className="philosophy-notice-copy">
+                The views and ideas expressed in this section are my own personal
+                reflections and philosophical perspectives. They are not affiliated
+                with, representative of, endorsed by, or officially connected to my
+                college, institution, academic work, organization, or any other
+                affiliation.
+              </p>
+
+              <p className="philosophy-notice-copy">
+                Please don't judge my academic abilities, professional work,
+                achievements, character, or capabilities based on the opinions shared
+                here. This is simply a space where I explore ideas, question things,
+                and share how I see the world.
+              </p>
+
+              <p className="philosophy-notice-copy">
+                You don't have to agree with me — you just have to be willing to
+                explore a different perspective.
+              </p>
+
+              <label className="philosophy-notice-check">
+                <input
+                  type="checkbox"
+                  checked={philosophyNoticeAccepted}
+                  onChange={(event) =>
+                    setPhilosophyNoticeAccepted(event.target.checked)
+                  }
+                />
+                <span>
+                  I understand that the views in this section are personal opinions
+                  and do not represent my academic or professional affiliations.
+                </span>
+              </label>
+
+              <div className="philosophy-notice-actions">
+                <button
+                  type="button"
+                  className="philosophy-notice-button back"
+                  onClick={() => setPhilosophyNoticeOpen(false)}
+                >
+                  ← Back to Blogs
+                </button>
+
+                <button
+                  type="button"
+                  className="philosophy-notice-button continue"
+                  disabled={!philosophyNoticeAccepted}
+                  onClick={continueToPhilosophy}
+                >
+                  Continue to Philosophy →
+                </button>
+              </div>
+            </div>
+          </div>
         )}
 
         <footer className="blog-footer">
