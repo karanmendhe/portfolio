@@ -1426,6 +1426,239 @@ const BLOG_POSTS: BlogPost[] = [
                "This is my technical overview of where I think solar energy is heading — from rooftop generation and grid-connected systems toward smarter, more distributed and better-managed energy systems. — Karan Mendhe"
     }
   },
+  {
+    id: "post-05",
+    number: "05",
+    title: "Perspective: The World Changes When You Move",
+    excerpt:
+      "We think we understand people, situations, and even ourselves — but we are always looking from somewhere.",
+    category: "Philosophy",
+    date: "September 2026",
+    readingTime: "10 min read",
+    content: {
+      sections: [
+        {
+          heading: "My Father Drinks a Lot",
+          paragraphs: [
+            "My father drinks a lot.",
+            "He has two sons.",
+            "One son grows up watching his father drink. He starts drinking too and eventually becomes an alcoholic.",
+            "The other son sees the exact same thing and thinks, \"I don't want to become like him.\" He never touches alcohol.",
+            "Now imagine there is a third son.",
+            "He sees his father drinking too, but his perspective is different. He drinks sometimes, goes to parties, enjoys himself, and lives his life without letting alcohol control him.",
+            "Same father. Same house. Same situation. Three different outcomes.",
+            "So what changed?",
+            "The father didn't.",
+            "The situation didn't.",
+            "Maybe what changed was how they saw it.",
+            "And that's where perspective comes in."
+          ],
+          image: {
+            path: "/assets/Blog_Images/perspective/different_perspective.jpg",
+            alt: "Different perspectives represented by the same situation"
+          }
+        },
+        {
+          heading: "What Is Perspective?",
+          paragraphs: [
+            "For me, perspective is basically POV.",
+            "Your point of view. My point of view. Someone else's point of view.",
+            "But the interesting part is that perspective is never really fixed.",
+            "The first time you meet someone, you build a perspective about them.",
+            "Maybe they seem really nice.",
+            "Then you talk to them again and they seem rude.",
+            "Then you spend more time with them and realize they weren't actually rude. Maybe they were just having a bad day.",
+            "Then, after knowing them for a while, you might see another side of them completely.",
+            "So which one was the real person?",
+            "Maybe all of them.",
+            "Because people change, situations change, and our perspective changes with them.",
+            "We don't build a perspective once and keep it forever.",
+            "We keep building it."
+          ]
+        },
+        {
+          heading: "We Only See Our Side",
+          paragraphs: [
+            "I remember going to a small local shop while I was working on one of my projects.",
+            "I needed a tiny semiconductor component. It probably cost only one or two rupees.",
+            "I asked the shopkeeper if he had it.",
+            "He refused.",
+            "Then I asked if he could tell me where I could get it.",
+            "He just made a gesture with his hand and basically told me to get lost.",
+            "I felt really bad.",
+            "At that moment, my perspective was simple:",
+            "\"Why was this guy so rude to me?\"",
+            "But later, when I thought about it again, I started thinking differently.",
+            "Maybe he was stressed.",
+            "Maybe many people had already come asking him for things he didn't have.",
+            "Maybe I was just another annoying customer that day.",
+            "Maybe something completely unrelated was happening in his life.",
+            "I don't actually know.",
+            "And that's the point.",
+            "I knew what happened to me. I didn't know what was happening to him.",
+            "Now whenever I pass that shop, I often see that it's closed.",
+            "I don't know why.",
+            "I don't know what happened to the owner.",
+            "But somewhere in my mind, I still think: What if something was going on with him?",
+            "I don't think he deserved anything bad.",
+            "And I don't think he was necessarily a bad person because of what happened that day.",
+            "I only saw one moment.",
+            "And one moment is not someone's entire story."
+          ],
+          image: {
+            path: "/assets/Blog_Images/perspective/self_reflection.jpg",
+            alt: "Self-reflection representing the limits of our own perspective"
+          }
+        },
+        {
+          heading: "The Same Face Can Mean Different Things",
+          paragraphs: [
+            "I notice this kind of thing in everyday life too.",
+            "Imagine a teacher looking at a student who is staring at the board with a serious face.",
+            "One person might say: \"He's confused.\"",
+            "Another might say: \"He's actually paying attention.\"",
+            "Someone else might say: \"He's really interested in this.\"",
+            "The face is the same.",
+            "The student is sitting in the same place.",
+            "But the perspective changes.",
+            "And we do this all the time.",
+            "Someone smiles at you.",
+            "You think they're smiling at you.",
+            "But maybe they're actually smiling at their friend standing behind you.",
+            "Someone doesn't smile back.",
+            "You might think they're ignoring you.",
+            "But maybe they're driving and concentrating on the road.",
+            "Someone doesn't reply to your message.",
+            "You might think they're angry.",
+            "Maybe they're just busy.",
+            "We constantly create stories about people using very little information.",
+            "We know our own intentions because we are inside our own heads.",
+            "With everyone else, we only see pieces."
+          ]
+        },
+        {
+          heading: "Perspective Keeps Changing",
+          paragraphs: [
+            "That's why I don't think changing your perspective is a weakness.",
+            "I actually think it's growth.",
+            "If I believed something five years ago and today I see it completely differently, that doesn't necessarily mean I was stupid before.",
+            "Maybe I simply didn't have the information I have now.",
+            "Maybe I hadn't experienced enough.",
+            "Maybe I hadn't met enough people.",
+            "Maybe I was standing in a different place.",
+            "And when you move, the view changes.",
+            "That's why I think perspective is something we are supposed to build.",
+            "Not something we are supposed to copy.",
+            "Our parents have a perspective.",
+            "Our friends have one.",
+            "Our teachers have one.",
+            "Society has one.",
+            "But eventually, we have to make our own.",
+            "And even after making it, we should be willing to change it when something new comes in."
+          ]
+        },
+        {
+          heading: "Everyone Has a Perspective",
+          paragraphs: [
+            "I don't believe that means everyone is automatically right.",
+            "If someone sees an event differently, that doesn't magically make every interpretation correct.",
+            "But it does remind me that I don't know everyone's perspective.",
+            "And sometimes I think I do.",
+            "That's where things get interesting.",
+            "We look at someone and decide what kind of person they are.",
+            "We look at a beggar and immediately create a story.",
+            "We look at a rich person and create another story.",
+            "We look at a student who is failing and assume they're lazy.",
+            "We look at someone successful and assume they had everything easy.",
+            "But how much of their story do we actually know?",
+            "Even when we think we understand someone, we might only understand the part that was visible to us.",
+            "That's why I think perspective should make us less quick to judge.",
+            "Not because we have to agree with everyone.",
+            "Not because everyone deserves an excuse.",
+            "But because sometimes we simply don't have enough information to make the judgment we think we're making."
+          ]
+        },
+        {
+          heading: "Perspective Is Also About Communication",
+          paragraphs: [
+            "For me, perspective isn't only about understanding people.",
+            "It also changes how we communicate.",
+            "I used to be much more shy about speaking in front of people.",
+            "When someone is afraid of giving a presentation, they usually think:",
+            "\"Everyone is looking at me.\"",
+            "\"Everyone is judging me.\"",
+            "\"What if I forget my lines?\"",
+            "But when I present now, I try to look at it differently.",
+            "I'm not there just to speak.",
+            "I'm there to make them understand me.",
+            "If I'm talking about my project and nobody is paying attention, then it doesn't really matter how perfectly I delivered my lines.",
+            "The audience has to receive what I'm trying to say.",
+            "So I look at people.",
+            "I notice their faces.",
+            "Are they nodding?",
+            "Are they interested?",
+            "Are they looking somewhere else?",
+            "Which part made them pay attention?",
+            "And then I can adjust how I explain things.",
+            "It's the same thing in a hackathon.",
+            "My perspective might be: \"Our model is the best. I need to convince the judges.\"",
+            "But the judges have their own perspective.",
+            "They're looking at dozens of projects.",
+            "They aren't only asking, \"Is this the best model?\"",
+            "They're also asking:",
+            "\"What did this team actually build?\"",
+            "\"How much effort did they put into it?\"",
+            "\"Does this solve the problem?\"",
+            "\"Can they explain it properly?\"",
+            "So if I only think about my own perspective, I might miss what they are actually looking for.",
+            "Sometimes understanding someone's perspective isn't about agreeing with them. It's about understanding what they are seeing."
+          ]
+        },
+        {
+          heading: "A Thought from Epictetus",
+          paragraphs: [
+            "\"Men are disturbed not by things, but by the views which they take of things.\"",
+            "— Epictetus, Enchiridion, 5"
+          ]
+        },
+        {
+          heading: "Move",
+          paragraphs: [
+            "Maybe that's what perspective really means to me.",
+            "Not being right.",
+            "Not being wrong.",
+            "Not pretending everyone thinks the same way.",
+            "It's about understanding that how I see someone, how someone sees me, and how I see myself can all be completely different.",
+            "And those perspectives can change.",
+            "A person can change.",
+            "A situation can change.",
+            "We can learn something new.",
+            "We can experience something we never experienced before.",
+            "And suddenly, something we were completely sure about doesn't look the same anymore.",
+            "So when you think you understand someone, maybe ask yourself:",
+            "\"What am I actually seeing?\"",
+            "And when you think you understand a situation:",
+            "\"What am I missing?\"",
+            "Because maybe you don't need a different world.",
+            "Maybe you don't even need a different life.",
+            "Maybe you just need to move.",
+            "One step back.",
+            "One step forward.",
+            "One step to the side.",
+            "And suddenly, the same world looks different."
+          ],
+          image: {
+            path: "/assets/Blog_Images/perspective/final_explored.jpg",
+            alt: "A new viewpoint representing a change in perspective"
+          },
+          quote:
+            "We think we understand people because we can see them. But we only know the part of them that our perspective allows us to see."
+        }
+      ],
+      footer:
+        "We are meant to build our own perspective, change it when we learn something new, and remember that we will never know every perspective. — Karan"
+    }
+  },
 ];
 
 const Blog: React.FC<BlogProps> = ({ onBack }) => {
