@@ -22,6 +22,10 @@ type BlogPost = {
         path: string;
         alt: string;
       };
+      quotes?: Array<{
+        text: string;
+        author: string;
+      }>;
     }>;
     footer: string;
   };
@@ -1454,7 +1458,7 @@ const BLOG_POSTS: BlogPost[] = [
             "And that's where perspective comes in."
           ],
           image: {
-            path: "/assets/Blog_Images/perspective/different_perspective.jpg",
+            path: "/assets/Blog_Images/perspective/diffrent_ perspective.jpg",
             alt: "Different perspectives represented by the same situation"
           }
         },
@@ -1615,13 +1619,6 @@ const BLOG_POSTS: BlogPost[] = [
           ]
         },
         {
-          heading: "A Thought from Epictetus",
-          paragraphs: [
-            "\"Men are disturbed not by things, but by the views which they take of things.\"",
-            "— Epictetus, Enchiridion, 5"
-          ]
-        },
-        {
           heading: "Move",
           paragraphs: [
             "Maybe that's what perspective really means to me.",
@@ -1650,9 +1647,21 @@ const BLOG_POSTS: BlogPost[] = [
           image: {
             path: "/assets/Blog_Images/perspective/final_explored.jpg",
             alt: "A new viewpoint representing a change in perspective"
-          },
-          quote:
-            "We think we understand people because we can see them. But we only know the part of them that our perspective allows us to see."
+          }
+        },
+        {
+          heading: "A Thought from Epictetus",
+          paragraphs: [],
+          quotes: [
+            {
+              text: "Men are disturbed not by things, but by the views which they take of things.",
+              author: "Epictetus, Enchiridion, 5"
+            },
+            {
+              text: "We think we understand people because we can see them. But we only know the part of them that our perspective allows us to see.",
+              author: "Karan"
+            }
+          ]
         }
       ],
       footer:
@@ -2442,6 +2451,18 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
           font-style: italic;
         }
 
+        .article-body .quote strong {
+          font-weight: 800;
+        }
+
+        .quote-author {
+          margin-top: 10px;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          color: #94a3b8;
+        }
+
         .article-image {
           margin: 32px 0;
           width: 100%;
@@ -2930,9 +2951,16 @@ const Blog: React.FC<BlogProps> = ({ onBack }) => {
 
                     {section.quote && (
                       <div className="quote">
-                        "{section.quote}"
+                        <strong>"{section.quote}"</strong>
                       </div>
                     )}
+
+                    {section.quotes && section.quotes.map((quote, quoteIndex) => (
+                      <div className="quote" key={quoteIndex}>
+                        <strong>"{quote.text}"</strong>
+                        <div className="quote-author">— {quote.author}</div>
+                      </div>
+                    ))}
 
                     {section.image && (
                       <div className="article-image">

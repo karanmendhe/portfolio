@@ -133,7 +133,7 @@ export const SITE: SiteData = {
   location: "Wardha, Maharashtra, India",
   linkedin: "https://www.linkedin.com/in/karan-mendhe-46051a2a7",
   github: "",
-  resumeATS: "/assets/karan-mendhe-resume-ats.pdf",
+  resumeATS: "/assets/Karan_Resume_General_ATS.pdf",
   resumeVisual: "/assets/karan-mendhe-resume-visual.pdf",
 };
 
