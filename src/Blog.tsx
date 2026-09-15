@@ -1668,6 +1668,532 @@ const BLOG_POSTS: BlogPost[] = [
         "We are meant to build our own perspective, change it when we learn something new, and remember that we will never know every perspective. — Karan"
     }
   },
+  {
+    id: "post-06",
+    number: "06",
+    title: "The EV Revolution Is Already Here — But the Battery Is Still the Biggest Question",
+    excerpt:
+      "Electric vehicles have gone from basic utility scooters to sophisticated machines. But after owning one, I realised the biggest question isn't simply how far an EV can go — it's what happens when the battery needs attention.",
+    category: "Technical",
+    date: "September 2026",
+    readingTime: "15 min read",
+    content: {
+      sections: [
+        {
+          heading: "(continued)",
+          paragraphs: [],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/hero_image.jpg",
+            alt: "Modern electric vehicle battery technology and the EV transition"
+          }
+        },
+        {
+          heading: "The EV Revolution Is Already Here",
+          paragraphs: [
+            "About ten years ago, when I was a child, electric scooters looked very different from what we see on Indian roads today."
+          ]
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "I remember seeing basic electric scooters being used for practical purposes, especially by people delivering newspapers. Most of them had a very generic design, somewhat similar to the old Scooty Pep style. They looked more like economical transportation than something people would buy because they actually wanted the vehicle.",
+            "At that time, I never really thought of electric vehicles as the future."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/10_years_ago.jpg",
+            alt: "An older generation electric scooter representing EVs from around ten years ago"
+          }
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "And honestly, why would I?",
+            "For most people, a two-wheeler has never been only about transportation. Affordability and running cost matter, but appearance matters too. A motorcycle or scooter can become part of how a person presents themselves. Those early electric scooters did not offer much of that appeal.",
+            "Many early electric two-wheelers also relied on lead-acid batteries. Compared with today's lithium-ion systems, lead-acid batteries are heavier and have lower energy density, making them poorly suited to achieving the range and packaging expected from modern EVs.",
+            "The electric vehicle I knew back then was essentially:",
+            "low-cost transportation + limited range + basic design.",
+            "Then something changed."
+          ]
+        },
+        {
+          heading: "The Years When Everything Started Moving",
+          paragraphs: [
+            "I was away from home for a few years, roughly during the 2020–2022 period.",
+            "When I came back, I noticed something I hadn't expected.",
+            "The EVs around me had changed.",
+            "Suddenly, electric scooters were not just basic utility vehicles anymore. Companies were producing scooters with modern designs, longer claimed ranges, digital displays, connected features, stronger acceleration and much more sophisticated electronics.",
+            "The names were changing too.",
+            "Bajaj, TVS, Ather, Ola and other manufacturers were entering or expanding their presence in electric mobility. Established automotive companies were no longer treating electric vehicles as a distant experiment.",
+            "And that matters.",
+            "When a major manufacturer enters a technology, it doesn't just add another product to the market. It can give consumers confidence that the technology is becoming a legitimate part of the automotive industry.",
+            "Government policy also played an important role in accelerating adoption.",
+            "India's FAME-II scheme, introduced in 2019, supported electric mobility through demand incentives, including incentives for eligible electric two-wheelers. In June 2021, the incentive for eligible electric two-wheelers was increased to ₹15,000/kWh, subject to a cap of 40% of the vehicle cost.",
+            "But that chapter of EV policy has now ended.",
+            "FAME-II ended on 31 March 2024. It was followed by the Electric Mobility Promotion Scheme (EMPS) 2024, and then by the PM E-DRIVE scheme from 1 October 2024. Under PM E-DRIVE, the e-2W incentive was reduced to ₹2,500/kWh, with a maximum incentive of ₹5,000 per vehicle from 1 April 2025. The central demand incentive for eligible electric two-wheelers ended on 31 July 2026.",
+            "That makes the current EV market particularly interesting.",
+            "The technology now has to prove that it can stand increasingly on its own economics rather than relying on the same level of upfront subsidy that helped accelerate earlier adoption.",
+            "And I don't think subsidies alone explain why consumers became interested.",
+            "For an ordinary consumer, one of the biggest attractions is much simpler:",
+            "running cost.",
+            "Petrol is a recurring expense. Electricity, particularly when charging at home, can make the energy cost of an electric scooter feel almost invisible by comparison.",
+            "And when established manufacturers entered the market, consumers had another reason to trust the technology.",
+            "The EV was no longer ‘that electric scooter.’",
+            "It was becoming a normal vehicle."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/EV_evolution_timeline.png",
+            alt: "Timeline showing the evolution of electric vehicles from basic scooters to modern EVs"
+          }
+        },
+        {
+          heading: "And Then I Bought One",
+          paragraphs: [
+            "Eventually, my father gave me a choice.",
+            "I could go for a much more expensive traditional motorcycle, or I could choose something more economical.",
+            "At that stage of my life, I chose the economical option.",
+            "I was a student.",
+            "I didn't want fuel costs constantly limiting where I could go. I wanted to be able to travel to college, meet friends and move around without thinking about filling the tank every few days.",
+            "Environmental considerations were not the reason I bought it.",
+            "Technology wasn't the reason either.",
+            "It was simply practical.",
+            "And that is something I think is important when discussing EV adoption.",
+            "People don't necessarily adopt new technology because they understand the technology.",
+            "They adopt it when the technology makes sense in their lives."
+          ]
+        },
+        {
+          heading: "My First Real Experience With an EV",
+          paragraphs: [
+            "The first thing that surprised me was the silence.",
+            "An electric scooter doesn't have the familiar engine noise of a petrol vehicle. At low speeds, what you mostly hear is the tyres moving across the road.",
+            "Then there was the acceleration.",
+            "Electric motors can produce strong torque from very low speed, so the initial response feels very different from a conventional petrol vehicle. There is no traditional engine revving its way toward peak torque.",
+            "You simply twist the throttle—and it moves.",
+            "The other thing that surprised me was the range.",
+            "My scooter was advertised at around 100 km, but in my initial real-world use I experienced something closer to 75 km.",
+            "My normal daily travel was around 30–40 km, so that was still perfectly usable for me.",
+            "Charging at home was also extremely convenient.",
+            "I didn't have to visit a petrol station. I could simply plug it in.",
+            "For my family, the additional electricity consumption also didn't feel like a major increase in the electricity bill.",
+            "That changed the way I thought about transportation.",
+            "The fuel expense that had always existed in the background of owning a petrol vehicle simply wasn't there anymore."
+          ]
+        },
+        {
+          heading: "The Economics Were Surprisingly Good",
+          paragraphs: [
+            "During the first year, maintenance was almost nonexistent.",
+            "Apart from something as ordinary as a puncture, there wasn't much to spend money on.",
+            "Later, servicing was still relatively simple. Compared with a conventional internal-combustion vehicle, an EV does not require engine oil changes, spark plugs or many of the engine-related service operations associated with an ICE powertrain.",
+            "That doesn't mean an EV has zero maintenance.",
+            "There are still brakes, tyres, suspension, bearings, electrical components and other systems.",
+            "But the electric powertrain has fewer moving mechanical components.",
+            "Then, after roughly a year and a half, I experienced my first significant electrical problem.",
+            "The DC-DC converter around the lighting system developed an issue, causing the lights to blink.",
+            "The repair cost me around ₹2,000.",
+            "It was annoying, but it didn't fundamentally change my opinion of the vehicle.",
+            "For me, the EV still made economic sense.",
+            "Until the battery became the problem."
+          ]
+        },
+        {
+          heading: "The ₹35,000 Problem",
+          paragraphs: [
+            "After around three years, my scooter suddenly stopped working.",
+            "I was told there was a problem with the battery.",
+            "I took it for repair, but the response I received was essentially:",
+            "“We can't guarantee the repair.”",
+            "At that point, replacing the battery became the practical option.",
+            "The replacement cost was around ₹35,000.",
+            "And that was the moment when I started thinking about EVs differently.",
+            "Not negatively.",
+            "But more realistically.",
+            "Until then, I had mostly experienced the benefits of an electric vehicle:",
+            "- Low running cost",
+            "- Convenient home charging",
+            "- Very little routine maintenance",
+            "- No petrol expense",
+            "- Instant acceleration",
+            "- Quiet operation",
+            "Now I was experiencing the other side.",
+            "The battery is not just another component.",
+            "It is one of the most important and expensive parts of an EV.",
+            "And suddenly, the question became:",
+            "What happens when the battery itself needs attention?"
+          ]
+        },
+        {
+          heading: "My Battery Experience Does Not Mean EV Batteries Last Only Three Years",
+          paragraphs: [
+            "This distinction is important.",
+            "My experience is one personal case. It should not be treated as proof that EV batteries generally fail after three years.",
+            "Battery degradation and battery failure are also not the same thing.",
+            "A battery can gradually lose usable capacity over time without suddenly becoming unusable."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Battery_degradation_curve.png",
+            alt: "Battery degradation curve showing gradual loss of usable capacity over time"
+          }
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "A complete pack failure is a different event from normal capacity fade.",
+            "For example, a U.S. Department of Energy summary of a Recurrent study covering roughly 15,000 plug-in vehicles from model years 2011–2023 found battery replacements due to failure at about 1.5% overall outside recalls, and below 1% for vehicles from 2016–2023.",
+            "But that number should not be directly applied to my scooter or to Indian electric two-wheelers.",
+            "The dataset primarily represents plug-in cars in the U.S., where battery packs, thermal systems, vehicle sizes, climates and operating conditions can be very different from those of a small Indian electric scooter.",
+            "The useful lesson isn't the percentage itself.",
+            "The lesson is that battery failure and battery aging need to be discussed separately."
+          ]
+        },
+        {
+          heading: "What Is Actually Inside an EV Battery?",
+          paragraphs: [
+            "When we say ‘the battery,’ we're simplifying a surprisingly complicated system.",
+            "An EV battery pack is not one giant battery.",
+            "It is an engineered system made from many interconnected cells, electrical connections, sensors, protection hardware, control electronics and software.",
+            "A simplified hierarchy looks like: Cell → Cell Group → Module → Battery Pack"
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Battery_anatomy.jpg",
+            alt: "Simplified EV battery hierarchy showing cells, cell groups, modules and battery pack"
+          }
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "The exact architecture varies by vehicle. Some modern designs eliminate traditional modules and use cell-to-pack or similar architectures.",
+            "Inside the pack, we can find components such as:",
+            "- Individual battery cells",
+            "- Busbars and electrical connections",
+            "- Voltage-sensing circuits",
+            "- Temperature sensors",
+            "- Battery Management System (BMS)",
+            "- Current sensing",
+            "- Contactors",
+            "- Fuses and protection devices",
+            "- Thermal-management components",
+            "- High-voltage connections",
+            "- Mechanical enclosure",
+            "- Communication interfaces",
+            "And one of the most important systems is the BMS."
+          ]
+        },
+        {
+          heading: "The BMS: The System Watching the Battery",
+          paragraphs: [
+            "A Battery Management System is responsible for monitoring and managing the battery.",
+            "Depending on the architecture, it can monitor parameters such as:",
+            "Cell voltage",
+            "Pack current",
+            "Temperature",
+            "State of Charge (SOC)",
+            "State of Health (SOH)",
+            "It also performs protection functions and can manage cell balancing.",
+            "Why is that necessary?",
+            "Because cells do not age identically.",
+            "One cell may have slightly different capacity.",
+            "Another may develop higher internal resistance.",
+            "One region of a pack may operate at a different temperature.",
+            "Over thousands of charge and discharge events, those small differences can become important.",
+            "The BMS therefore acts as the electrical and control layer between the cells and the rest of the vehicle."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/BMS_visual.jpg",
+            alt: "Battery Management System monitoring and controlling an EV battery pack"
+          }
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "It can detect abnormal conditions and prevent the battery from operating outside defined limits.",
+            "This is why the battery isn't simply a collection of cells connected together.",
+            "It is an electrochemical system controlled by electronics and software."
+          ]
+        },
+        {
+          heading: "What Happens When One Part of the Battery Goes Bad?",
+          paragraphs: [
+            "This is where my ₹35,000 experience becomes technically interesting.",
+            "A battery pack can contain many cells connected in series and parallel.",
+            "If one cell or cell group develops a problem, that doesn't necessarily mean every cell in the pack is physically damaged.",
+            "In principle, a technician could diagnose individual cells or groups and replace defective components.",
+            "But whether that is actually possible depends heavily on the pack's design.",
+            "Some battery packs are difficult to open without damaging seals or structural components. Cells may be welded into groups, and some packs use potting or other construction methods that make internal repair difficult.",
+            "Then there is the BMS.",
+            "If the BMS detects a serious fault, it can restrict or disable operation. A technician may also need manufacturer-specific diagnostic equipment and software to identify the fault and return the pack to service.",
+            "This creates an important distinction:",
+            "Technically repairable does not always mean economically or practically repairable.",
+            "That is what I experienced.",
+            "The repair shop could not give me confidence that repairing the existing pack would work reliably.",
+            "So the practical solution became a replacement.",
+            "And that is how a battery problem can turn into a major ownership cost."
+          ]
+        },
+        {
+          heading: "Why Did My Battery Fail?",
+          paragraphs: [
+            "This is where I want to be careful.",
+            "I don't have the diagnostic data from my original battery, so I cannot honestly say:",
+            "“This exact mechanism killed my battery.”",
+            "A battery failure after several years can have multiple possible causes.",
+            "Two broad categories are useful for understanding battery aging.",
+            "### Cycle Aging",
+            "This is degradation associated with charging and discharging the battery.",
+            "Every time energy moves in and out of the cells, chemical and mechanical changes occur inside the electrodes.",
+            "The severity depends on factors such as depth of discharge, charge and discharge rate, temperature and operating window.",
+            "### Calendar Aging",
+            "A battery can also age simply because time passes—even when it isn't being cycled heavily.",
+            "State of charge and temperature can strongly influence calendar aging.",
+            "This matters because an EV can spend long periods parked while its battery remains at a relatively high state of charge, particularly if it is left plugged in.",
+            "But again, this doesn't allow us to diagnose my particular battery.",
+            "Without pack data, cell voltages, temperature history, internal resistance measurements or BMS fault logs, claiming a specific cause would be speculation.",
+            "And that is an important engineering lesson in itself:",
+            "A failed battery should be diagnosed, not guessed at."
+          ]
+        },
+        {
+          heading: "Temperature Is One of the Biggest Battery Challenges",
+          paragraphs: [
+            "Battery chemistry doesn't operate independently of temperature.",
+            "Temperature affects performance, charging behaviour, degradation and safety.",
+            "This becomes particularly important for electric two-wheelers operating in hot climates.",
+            "A battery system does not necessarily need liquid cooling to manage temperature. Depending on the vehicle, thermal management can involve natural convection, forced air, heat-spreading structures, thermally conductive materials, potting materials, liquid cooling or software-based power and charging limits.",
+            "The design depends on the vehicle, battery chemistry, cost target and required performance.",
+            "This is why saying ‘EV batteries have thermal management’ is not enough.",
+            "The real engineering question is:",
+            "What kind of thermal management does this particular battery use, and is it sufficient for the environment in which it operates?"
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Thermal_management.jpg",
+            alt: "EV battery thermal management system showing heat generation and temperature control"
+          }
+        },
+        {
+          heading: "Why Fast Charging Is Harder Than It Looks",
+          paragraphs: [
+            "When you charge a battery faster, you are not simply pushing electricity into it more quickly.",
+            "You are increasing the electrochemical and thermal demands placed on the cells.",
+            "That means the battery has to manage:",
+            "Current → heat generation → temperature → electrochemical limits → safety → degradation",
+            "This is why the future of charging isn't simply:",
+            "“Build a charger with more power.”",
+            "The real engineering challenge is:",
+            "How quickly can the battery safely accept energy without causing unacceptable heat, degradation or safety risk?",
+            "As EV architectures move toward higher voltages and higher charging power, battery cells, power electronics, thermal systems and pack architecture all have to evolve together."
+          ]
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Fast_charging+thermal_runaway.png",
+            alt: "Infographic showing fast charging heat generation and thermal runaway propagation prevention"
+          }
+        },
+        {
+          heading: "India Had to Tighten Battery Safety Standards",
+          paragraphs: [
+            "The battery isn't only an economic issue.",
+            "It is also a safety issue.",
+            "After a series of EV battery fire incidents, India introduced additional requirements under AIS-156 and related standards.",
+            "The strengthened requirements addressed areas including battery cells, BMS, chargers, battery-pack design and thermal propagation.",
+            "The thermal-propagation requirement is particularly interesting.",
+            "A lithium-ion cell can potentially enter thermal runaway following an internal failure. The engineering challenge is to prevent that event from propagating through the rest of the battery pack.",
+            "That means the battery has to be designed not only to operate normally, but also to contain abnormal events.",
+            "This is another example of how EV technology has evolved.",
+            "The battery isn't just expected to store energy anymore.",
+            "It is expected to manage, monitor and contain that energy safely."
+          ]
+        },
+        {
+          heading: "Lithium-Ion Changed the EV",
+          paragraphs: [
+            "The transition from older lead-acid systems to lithium-ion batteries was one of the biggest technological shifts behind modern EVs.",
+            "Lithium-ion batteries offer much higher energy density than lead-acid technology, making them far better suited to vehicles where battery weight and available space matter.",
+            "But lithium-ion is not one single chemistry.",
+            "Two major families are:",
+            "### LFP — Lithium Iron Phosphate",
+            "LFP batteries are known for strong thermal and chemical stability and avoid nickel and cobalt in the cathode chemistry.",
+            "Their traditional trade-off has been lower energy density compared with many NMC designs.",
+            "### NMC — Nickel Manganese Cobalt",
+            "NMC batteries can provide higher energy density, which is useful when range and packaging are important.",
+            "However, they rely on nickel and cobalt and have different cost, thermal and durability trade-offs.",
+            "So the question isn't:",
+            "“Which battery is best?”",
+            "It is:",
+            "“Best for what?”",
+            "A low-cost city scooter, a long-range car and a high-performance EV do not necessarily need the same battery chemistry."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Future_battery_technologies_1.jpg",
+            alt: "Future EV battery technologies comparing emerging battery chemistry and cell technologies"
+          }
+        },
+        {
+          heading: "Where Does Battery Technology Go From Here?",
+          paragraphs: [
+            "The next stage of EV development is not going to come from one magical battery chemistry.",
+            "It is likely to be a combination of better cells, better materials, better thermal management, better power electronics, better BMS algorithms and better manufacturing.",
+            "One of the most interesting candidates is sodium-ion.",
+            "Sodium-ion batteries work on principles similar to lithium-ion batteries but replace lithium with sodium as the charge carrier. Their energy density is currently lower than the best lithium-ion technologies, but they can reduce dependence on lithium and may be particularly useful in smaller EVs, including two- and three-wheelers.",
+            "Another direction is silicon-based anodes. Silicon can store much more lithium than conventional graphite, potentially increasing energy density. The problem is that silicon expands significantly during cycling, creating durability challenges.",
+            "And then there is the technology most often associated with the next battery revolution:",
+            "solid-state batteries."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Future_battery_technologies_2.jpg",
+            alt: "Solid-state and next-generation battery technology for future electric vehicles"
+          }
+        },
+        {
+          heading: "(continued)",
+          paragraphs: [
+            "Solid-state designs replace the conventional liquid electrolyte with a solid electrolyte and could eventually provide higher energy density and improved safety.",
+            "But as of 2026, the important word is eventually.",
+            "All-solid-state batteries are still being demonstrated at prototype and early scale-up stages. Manufacturing complexity, cost, mechanical requirements and long-term real-world durability remain significant challenges.",
+            "So the next battery revolution is not here yet.",
+            "But it is being built."
+          ]
+        },
+        {
+          heading: "Battery Swapping: Another Way to Solve the Problem",
+          paragraphs: [
+            "Battery swapping approaches the ownership problem differently.",
+            "Instead of waiting for the battery inside the vehicle to charge, the user exchanges a depleted battery for a charged one.",
+            "For two-wheelers and three-wheelers, the concept is particularly attractive because smaller battery packs are easier to handle than large car battery packs.",
+            "It can also change the economics.",
+            "Instead of purchasing and eventually replacing the battery as one large capital expense, a user could effectively pay for battery energy or battery service over time.",
+            "But swapping introduces another engineering challenge:",
+            "standardisation and interoperability.",
+            "A battery has to physically fit the vehicle, communicate correctly with the BMS and vehicle electronics, and meet safety and compatibility requirements.",
+            "So swapping isn't a magic solution.",
+            "It is another architecture."
+          ]
+        },
+        {
+          heading: "What About Warranty?",
+          paragraphs: [
+            "This is another question that should be asked before buying an EV.",
+            "Battery and vehicle warranty terms vary by manufacturer and model, so there is no single industry-wide number.",
+            "For example, Honda's current India EV Care information lists a 3-year or 30,000-km vehicle warranty, whichever comes earlier, for its EV Care package. Honda also offers a Care Plus option that extends the warranty to five years.",
+            "That makes warranty timing particularly relevant to my experience.",
+            "My battery issue appeared at around the three-year point.",
+            "That doesn't prove that my battery should have been covered—or that every manufacturer's warranty ends at exactly three years.",
+            "It simply highlights why buyers should read the actual warranty carefully:",
+            "time limit + kilometre limit + capacity/degradation conditions + exclusions + repair/replacement terms",
+            "are all important.",
+            "A warranty isn't just a number on a brochure.",
+            "For a battery-heavy vehicle, it is part of the product."
+          ]
+        },
+        {
+          heading: "So, Are EVs Actually Economical?",
+          paragraphs: [
+            "After owning an EV, my answer is:",
+            "Yes—but it depends on how you use it.",
+            "The mistake is to calculate only the purchase price or only the fuel savings.",
+            "A proper ownership calculation should include:",
+            "EV: Purchase price + electricity + maintenance + battery replacement − resale value",
+            "Petrol: Purchase price + fuel + maintenance + engine-related servicing + consumables − resale value",
+            "The exact result depends heavily on how much you drive.",
+            "For the electricity side:",
+            "Electricity cost per km ≈ battery energy used per km × electricity tariff",
+            "If we know the battery capacity and real-world range, we can approximate:",
+            "Electricity cost per km ≈ battery capacity (kWh) × electricity tariff (₹/kWh) ÷ real-world range (km)",
+            "For the battery replacement:",
+            "Battery cost per km = replacement cost ÷ kilometres travelled before replacement",
+            "And this is where my own experience becomes useful.",
+            "We already know:",
+            "Battery replacement = approximately ₹35,000",
+            "Initial real-world range = approximately 75 km",
+            "Daily travel = approximately 30–40 km",
+            "I don't want to invent the odometer reading or electricity tariff just to produce a precise-looking number.",
+            "The honest conclusion from my experience is:",
+            "My EV clearly reduced my recurring transportation cost, but the battery replacement became the largest single unexpected ownership expense.",
+            "That is the part of EV economics that a simple fuel-versus-electricity comparison can miss."
+          ]
+        },
+        {
+          heading: "The Problem Isn't EV Technology. It's the Entire Ecosystem.",
+          paragraphs: [
+            "My biggest lesson from owning an EV wasn't that electric vehicles are bad.",
+            "It was actually the opposite.",
+            "I still believe buying an EV was a good decision.",
+            "My experience changed my view of one thing:",
+            "the manufacturer matters.",
+            "A vehicle isn't just a motor and battery.",
+            "You're also buying into an ecosystem:",
+            "Battery cells",
+            "BMS",
+            "Power electronics",
+            "Software",
+            "Diagnostics",
+            "Spare parts",
+            "Warranty",
+            "Service network",
+            "Battery support",
+            "The quality of those systems—and the manufacturer's ability to support them over time—can determine how easy the vehicle is to own.",
+            "That is why certified components, proper diagnostics, warranty support and a reliable service network matter.",
+            "The battery may be technically repairable, but if the service ecosystem cannot diagnose it, source compatible components or guarantee the repair, the consumer may still end up replacing the entire pack.",
+            "That is where a technically repairable problem can become an expensive ownership problem."
+          ]
+        },
+        {
+          heading: "What Comes Next?",
+          paragraphs: [
+            "If I were buying my next EV several years from now, I would still choose an electric vehicle.",
+            "But my biggest requirement would be different.",
+            "I wouldn't only ask:",
+            "How many kilometres does it go?",
+            "I'd also ask:",
+            "How long will the battery last?",
+            "I'd want to know:",
+            "- What chemistry does it use?",
+            "- How is the battery thermally managed?",
+            "- What does the BMS monitor?",
+            "- How does the manufacturer estimate battery health?",
+            "- What exactly does the battery warranty cover?",
+            "- Can the battery be repaired at cell or module level?",
+            "- What happens after the warranty ends?",
+            "- What is the expected degradation over time?",
+            "- How much does a replacement pack cost?",
+            "- Can the battery be recycled or reused?",
+            "Because the future of EVs isn't simply about putting more vehicles on the road.",
+            "It's about making the entire lifecycle of those vehicles better."
+          ]
+        },
+        {
+          heading: "The EV Revolution Has Already Started",
+          paragraphs: [
+            "When I was a child, electric scooters looked like basic utility vehicles.",
+            "Today, electric two-wheelers are a normal part of India's roads. Government policy helped accelerate adoption, manufacturers invested heavily, battery technology improved, and consumers discovered that electricity could replace a significant recurring fuel expense.",
+            "But the story isn't finished.",
+            "The first question was:",
+            "Can we build a practical electric vehicle?",
+            "We answered that.",
+            "Then:",
+            "Can we make it affordable and desirable?",
+            "We're getting there.",
+            "Now the harder question is:",
+            "Can we make the battery last longer, charge faster, cost less and remain reliable throughout the entire life of the vehicle?",
+            "That is where the next generation of EV technology will be decided.",
+            "The EV revolution may have started with replacing the engine.",
+            "But the next revolution will be decided by what happens inside—and around—the battery.",
+            "Not simply a better motor.",
+            "Not simply a longer range.",
+            "A better battery, and a better ecosystem around it."
+          ],
+          image: {
+            path: "/assets/Blog_Images/Ev_blog/Final_image_the_future.jpg",
+            alt: "The future of electric vehicles centred around better batteries and a stronger ecosystem"
+          }
+        }
+      ],
+      footer:
+        "This is my technical perspective on EV ownership, battery technology, safety, economics and where electric mobility could go next.\n\n— Karan Mendhe"
+    }
+  },
 ];
 
 const Blog: React.FC<BlogProps> = ({ onBack }) => {
