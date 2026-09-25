@@ -300,6 +300,7 @@ export const PROJECTS: ProjectData[] = [
           { name: "Karan Mendhe", role: "ESP32 Programming, Hardware Development, Presentation" },
           { name: "Omkar Kale", role: "Team Lead & Project Coordination" },
           { name: "Madhur Chandak", role: "Mobile Application Development" },
+          { name: "Aditya Dhage", role: "Hardware integration" },
           { name: "Sarthak Nagose", role: "Hardware Assembly & Soldering" },
           { name: "Sanchita Kurwale", role: "Presentation & Documentation" },
         ] },
